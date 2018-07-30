@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.MediaType;
 import org.springframework.security.saml.SAMLEntryPoint;
 import org.springframework.stereotype.Component;
 import service.provider.constants.SamlConstants.UrlConstants;
@@ -131,7 +132,7 @@ public class SecurityFilter implements Filter {
     }
 
     private void displayErrorPage(ServletResponse response) throws IOException {
-        response.setContentType("text/html");
+        response.setContentType(MediaType.TEXT_HTML_VALUE);
         ((HttpServletResponse) response).setStatus(HttpServletResponse.SC_OK);
         response.getWriter().println(new String(ByteStreams.toByteArray(new ClassPathResource(UrlConstants.ERROR_PAGE_FILE).getInputStream())));
         response.getWriter().flush();
