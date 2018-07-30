@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error</title>
+    <style type="text/css">
+
+        ::selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        ::moz-selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        ::webkit-selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        body {
+            background-color: #fff;
+            margin: 40px;
+            font: 13px/20px normal Helvetica, Arial, sans-serif;
+            color: #4F5155;
+        }
+
+        h1 {
+            color: #444;
+            background-color: transparent;
+            border-bottom: 1px solid #D0D0D0;
+            font-size: 22px;
+            font-weight: normal;
+            margin: 0 0 14px 0;
+            padding: 14px 15px 10px 15px;
+        }
+
+        #container {
+            margin: 10px;
+            border: 1px solid #D0D0D0;
+            -webkit-box-shadow: 0 0 8px #D0D0D0;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+
+        p {
+            margin: 12px 15px 12px 15px;
+        }
+    </style>
+</head>
+<body onload="getUrlParameter('message')">
+<div id="container" style="margin-top:5%;">
+    <h1>Error</h1>
+    <p>For some reason we're not able to process your request on our server. Please contact system administrator for
+        more details.
+        <br/><br/>
+        <span id="message"></span>
+    </p>
+</div>
+
+<script>
+    function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                document.getElementById("message").innerText = sParameterName[1] === undefined ? true : sParameterName[1];
+                return;
+            }
+        }
+    };
+</script>
+</body>
+</html>

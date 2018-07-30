@@ -1,0 +1,3305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<domains>
+    <!--Top Level Domains-->
+    <!--  Infrastructure Top Level Domains -->
+    <tld domain="root"/>
+    <tld domain="arpa"/>
+
+    <!-- The following gTLDs are in actual use -->
+    <tld domain="aero"/>
+    <tld domain="biz"/>
+    <tld domain="cat"/>
+    <tld domain="com"/>
+    <tld domain="coop"/>
+    <tld domain="edu"/>
+    <tld domain="gov"/>
+    <tld domain="info"/>
+    <tld domain="int"/>
+    <tld domain="jobs"/>
+    <tld domain="mil"/>
+    <tld domain="mobi"/>
+    <tld domain="museum"/>
+    <tld domain="name"/>
+    <tld domain="net"/>
+    <tld domain="org"/>
+    <tld domain="pro"/>
+    <tld domain="travel"/>
+
+    <!-- The following gTLDs are in the process of being approved, and may be added to the root nameservers in the near future -->
+    <tld domain="asia"/>
+    <tld domain="post"/>
+    <tld domain="tel"/>
+    <tld domain="geo"/>
+    <tld domain="gal"/>
+    <tld domain="cym"/>
+    <tld domain="sco"/>
+    <tld domain="kid"/>
+    <tld domain="kids"/>
+    <tld domain="mail"/>
+    <tld domain="web"/>
+    <tld domain="xxx"/>
+    <tld domain="tech"/>
+
+    <!-- The following gTLDs are removed from the registry -->
+    <tld domain="nato"/>
+
+    <!-- The following gTLDs are PSEUDO_DOMAINs -->
+    <tld domain="bitnet"/>
+    <tld domain="csnet"/>
+    <tld domain="uucp"/>
+    <tld domain="local"/>
+    <tld domain="internal"/>
+    <tld domain="onion"/>
+
+    <!--  Country Code Top Level Domains -->
+    <tld domain="ac"/>
+    <tld domain="ad"/>
+    <tld domain="ae"/>
+    <tld domain="af"/>
+    <tld domain="ag"/>
+    <tld domain="ai"/>
+    <tld domain="al"/>
+    <tld domain="am"/>
+    <tld domain="an"/>
+    <tld domain="ao"/>
+    <tld domain="aq"/>
+    <tld domain="ar"/>
+    <tld domain="as"/>
+    <tld domain="at"/>
+    <tld domain="au"/>
+    <tld domain="aw"/>
+    <tld domain="ax"/>
+    <tld domain="az"/>
+    <tld domain="ba"/>
+    <tld domain="bb"/>
+    <tld domain="bd"/>
+    <tld domain="be"/>
+    <tld domain="bf"/>
+    <tld domain="bg"/>
+    <tld domain="bh"/>
+    <tld domain="bi"/>
+    <tld domain="bj"/>
+    <tld domain="bm"/>
+    <tld domain="bn"/>
+    <tld domain="bo"/>
+    <tld domain="br"/>
+    <tld domain="bs"/>
+    <tld domain="bt"/>
+    <tld domain="bu"/>
+    <tld domain="bv"/>
+    <tld domain="bw"/>
+    <tld domain="by"/>
+    <tld domain="bz"/>
+    <tld domain="ca"/>
+    <tld domain="cc"/>
+    <tld domain="cd"/>
+    <tld domain="cf"/>
+    <tld domain="cg"/>
+    <tld domain="ch"/>
+    <tld domain="ci"/>
+    <tld domain="ck"/>
+    <tld domain="cl"/>
+    <tld domain="cm"/>
+    <tld domain="cn"/>
+    <tld domain="co"/>
+    <tld domain="cr"/>
+    <tld domain="cs"/>
+    <tld domain="cu"/>
+    <tld domain="cv"/>
+    <tld domain="cx"/>
+    <tld domain="cy"/>
+    <tld domain="cz"/>
+    <tld domain="dd"/>
+    <tld domain="de"/>
+    <tld domain="dj"/>
+    <tld domain="dk"/>
+    <tld domain="dm"/>
+    <tld domain="do"/>
+    <tld domain="dz"/>
+    <tld domain="ec"/>
+    <tld domain="ee"/>
+    <tld domain="eg"/>
+    <tld domain="eh"/>
+    <tld domain="er"/>
+    <tld domain="es"/>
+    <tld domain="et"/>
+    <tld domain="eu"/>
+    <tld domain="fi"/>
+    <tld domain="fj"/>
+    <tld domain="fk"/>
+    <tld domain="fm"/>
+    <tld domain="fo"/>
+    <tld domain="fr"/>
+    <tld domain="ga"/>
+    <tld domain="gb"/>
+    <tld domain="gd"/>
+    <tld domain="ge"/>
+    <tld domain="gf"/>
+    <tld domain="gg"/>
+    <tld domain="gh"/>
+    <tld domain="gi"/>
+    <tld domain="gl"/>
+    <tld domain="gm"/>
+    <tld domain="gn"/>
+    <tld domain="gp"/>
+    <tld domain="gq"/>
+    <tld domain="gr"/>
+    <tld domain="gs"/>
+    <tld domain="gt"/>
+    <tld domain="gu"/>
+    <tld domain="gw"/>
+    <tld domain="gy"/>
+    <tld domain="hk"/>
+    <tld domain="hm"/>
+    <tld domain="hn"/>
+    <tld domain="hr"/>
+    <tld domain="ht"/>
+    <tld domain="hu"/>
+    <tld domain="id"/>
+    <tld domain="ie"/>
+    <tld domain="il"/>
+    <tld domain="im"/>
+    <tld domain="in"/>
+    <tld domain="io"/>
+    <tld domain="iq"/>
+    <tld domain="ir"/>
+    <tld domain="is"/>
+    <tld domain="it"/>
+    <tld domain="je"/>
+    <tld domain="jm"/>
+    <tld domain="jo"/>
+    <tld domain="jp"/>
+    <tld domain="ke"/>
+    <tld domain="kg"/>
+    <tld domain="kh"/>
+    <tld domain="ki"/>
+    <tld domain="km"/>
+    <tld domain="kn"/>
+    <tld domain="kp"/>
+    <tld domain="kr"/>
+    <tld domain="kw"/>
+    <tld domain="ky"/>
+    <tld domain="kz"/>
+    <tld domain="la"/>
+    <tld domain="lb"/>
+    <tld domain="lc"/>
+    <tld domain="li"/>
+    <tld domain="lk"/>
+    <tld domain="lr"/>
+    <tld domain="ls"/>
+    <tld domain="lt"/>
+    <tld domain="lu"/>
+    <tld domain="lv"/>
+    <tld domain="ly"/>
+    <tld domain="ma"/>
+    <tld domain="mc"/>
+    <tld domain="md"/>
+    <tld domain="me"/>
+    <tld domain="mg"/>
+    <tld domain="mh"/>
+    <tld domain="mk"/>
+    <tld domain="ml"/>
+    <tld domain="mm"/>
+    <tld domain="mn"/>
+    <tld domain="mo"/>
+    <tld domain="mp"/>
+    <tld domain="mq"/>
+    <tld domain="mr"/>
+    <tld domain="ms"/>
+    <tld domain="mt"/>
+    <tld domain="mu"/>
+    <tld domain="mv"/>
+    <tld domain="mw"/>
+    <tld domain="mx"/>
+    <tld domain="my"/>
+    <tld domain="mz"/>
+    <tld domain="na"/>
+    <tld domain="nc"/>
+    <tld domain="ne"/>
+    <tld domain="nf"/>
+    <tld domain="ng"/>
+    <tld domain="ni"/>
+    <tld domain="nl"/>
+    <tld domain="no"/>
+    <tld domain="np"/>
+    <tld domain="nr"/>
+    <tld domain="nu"/>
+    <tld domain="nz"/>
+    <tld domain="om"/>
+    <tld domain="pa"/>
+    <tld domain="pe"/>
+    <tld domain="pf"/>
+    <tld domain="pg"/>
+    <tld domain="ph"/>
+    <tld domain="pk"/>
+    <tld domain="pl"/>
+    <tld domain="pm"/>
+    <tld domain="pn"/>
+    <tld domain="pr"/>
+    <tld domain="ps"/>
+    <tld domain="pt"/>
+    <tld domain="pw"/>
+    <tld domain="py"/>
+    <tld domain="qa"/>
+    <tld domain="re"/>
+    <tld domain="ro"/>
+    <tld domain="rs"/>
+    <tld domain="ru"/>
+    <tld domain="rw"/>
+    <tld domain="sa"/>
+    <tld domain="sb"/>
+    <tld domain="sc"/>
+    <tld domain="sd"/>
+    <tld domain="se"/>
+    <tld domain="sg"/>
+    <tld domain="sh"/>
+    <tld domain="si"/>
+    <tld domain="sj"/>
+    <tld domain="sk"/>
+    <tld domain="sl"/>
+    <tld domain="sm"/>
+    <tld domain="sn"/>
+    <tld domain="so"/>
+    <tld domain="sr"/>
+    <tld domain="st"/>
+    <tld domain="su"/>
+    <tld domain="sv"/>
+    <tld domain="sy"/>
+    <tld domain="sz"/>
+    <tld domain="tc"/>
+    <tld domain="td"/>
+    <tld domain="tf"/>
+    <tld domain="tg"/>
+    <tld domain="th"/>
+    <tld domain="tj"/>
+    <tld domain="tk"/>
+    <tld domain="tl"/>
+    <tld domain="tm"/>
+    <tld domain="tn"/>
+    <tld domain="to"/>
+    <tld domain="tp"/>
+    <tld domain="tr"/>
+    <tld domain="tt"/>
+    <tld domain="tv"/>
+    <tld domain="tw"/>
+    <tld domain="tz"/>
+    <tld domain="ua"/>
+    <tld domain="ug"/>
+    <tld domain="uk"/>
+    <tld domain="um"/>
+    <tld domain="us"/>
+    <tld domain="uy"/>
+    <tld domain="uz"/>
+    <tld domain="va"/>
+    <tld domain="vc"/>
+    <tld domain="ve"/>
+    <tld domain="vg"/>
+    <tld domain="vi"/>
+    <tld domain="vn"/>
+    <tld domain="vu"/>
+    <tld domain="wf"/>
+    <tld domain="ws"/>
+    <tld domain="ye"/>
+    <tld domain="yt"/>
+    <tld domain="yu"/>
+    <tld domain="za"/>
+    <tld domain="zm"/>
+    <tld domain="zr"/>
+    <tld domain="zw"/>
+
+
+    <!--  Second Level Domains -->
+
+    <!-- .us Second Level Domains -->
+    <sld domain="as.us"/>
+    <sld domain="gu.us"/>
+    <sld domain="pr.us"/>
+    <sld domain="vi.us"/>
+
+    <!-- .uk Second Level Domains -->
+    <sld domain="ac.uk"/>
+    <sld domain="co.uk"/>
+    <sld domain="gov.uk"/>
+    <sld domain="ltd.uk"/>
+    <sld domain="me.uk"/>
+    <sld domain="mod.uk"/>
+    <sld domain="net.uk"/>
+    <sld domain="nic.uk"/>
+    <sld domain="nhs.uk"/>
+    <sld domain="org.uk"/>
+    <sld domain="pic.uk"/>
+    <sld domain="police.uk"/>
+    <sld domain="govt.uk"/>
+    <sld domain="orgn.uk"/>
+    <sld domain="mil.uk"/>
+    <sld domain="lea.uk"/>
+
+    <!-- .tr Second Level Domains -->
+    <sld domain="com.tr"/>
+    <sld domain="gen.tr"/>
+    <sld domain="org.tr"/>
+    <sld domain="biz.tr"/>
+    <sld domain="info.tr"/>
+    <sld domain="av.tr"/>
+    <sld domain="dr.tr"/>
+    <sld domain="pol.tr"/>
+    <sld domain="bel.tr"/>
+    <sld domain="mil.tr"/>
+    <sld domain="mil.tr"/>
+    <sld domain="bbs.tr"/>
+    <sld domain="k12.tr"/>
+    <sld domain="edu.tr"/>
+    <sld domain="name.tr"/>
+    <sld domain="net.tr"/>
+    <sld domain="gov.tr"/>
+    <sld domain="gov.tr"/>
+    <sld domain="web.tr"/>
+    <sld domain="tel.tr"/>
+    <sld domain="tv.tr"/>
+
+    <!-- .hk Second Level Domains -->
+    <sld domain="ust.hk"/>
+    <sld domain="hku.hk"/>
+    <sld domain="cuhk.hk"/>
+
+    <!-- .it Second Level Domains -->
+
+    <sld domain="edu.it"/>
+    <sld domain="gov.it"/>
+    <sld domain="italy.it"/>
+
+    <!-- .az Second Level Domains -->
+    <sld domain="pro.az"/>
+
+    <!-- .au Second Level Domains -->
+
+    <sld domain="com.au"/>
+    <sld domain="net.au"/>
+    <sld domain="gov.au"/>
+    <sld domain="org.au"/>
+    <sld domain="edu.au"/>
+    <sld domain="csiro.au"/>
+    <sld domain="asn.au"/>
+    <sld domain="id.au"/>
+    <!--  New second level domains -->
+    <sld domain="act.au"/>
+    <sld domain="nsw.au"/>
+    <sld domain="nt.au"/>
+    <sld domain="qld.au"/>
+    <sld domain="sa.au"/>
+    <sld domain="tas.au"/>
+    <sld domain="vic.au"/>
+    <sld domain="wa.au"/>
+
+    <!-- .int Second Level Domains -->
+    <sld domain="eu.int"/>
+
+    <!-- .br Second Level Domains -->
+    <sld domain="adm.br"/>
+    <sld domain="adv.br"/>
+    <sld domain="agr.br"/>
+    <sld domain="am.br"/>
+    <sld domain="arq.br"/>
+    <sld domain="art.br"/>
+    <sld domain="ato.br"/>
+    <sld domain="bio.br"/>
+    <sld domain="blog.br"/>
+    <sld domain="bmd.br"/>
+    <sld domain="cim.br"/>
+    <sld domain="cng.br"/>
+    <sld domain="cnt.br"/>
+    <sld domain="com.br"/>
+    <sld domain="coop.br"/>
+    <sld domain="ecn.br"/>
+    <sld domain="edu.br"/>
+    <sld domain="eng.br"/>
+    <sld domain="esp.br"/>
+    <sld domain="etc.br"/>
+    <sld domain="eti.br"/>
+    <sld domain="far.br"/>
+    <sld domain="flog.br"/>
+    <sld domain="fm.br"/>
+    <sld domain="fnd.br"/>
+    <sld domain="fot.br"/>
+    <sld domain="fst.br"/>
+    <sld domain="g12.br"/>
+    <sld domain="ggf.br"/>
+    <sld domain="gov.br"/>
+    <sld domain="imb.br"/>
+    <sld domain="ind.br"/>
+    <sld domain="inf.br"/>
+    <sld domain="jor.br"/>
+    <sld domain="lel.br"/>
+    <sld domain="mat.br"/>
+    <sld domain="med.br"/>
+    <sld domain="mil.br"/>
+    <sld domain="mus.br"/>
+    <sld domain="net.br"/>
+    <sld domain="nom.br"/>
+    <sld domain="not.br"/>
+    <sld domain="ntr.br"/>
+    <sld domain="odo.br"/>
+    <sld domain="org.br"/>
+    <sld domain="ppg.br"/>
+    <sld domain="pro.br"/>
+    <sld domain="psc.br"/>
+    <sld domain="psi.br"/>
+    <sld domain="qsl.br"/>
+    <sld domain="rec.br"/>
+    <sld domain="slg.br"/>
+    <sld domain="srv.br"/>
+    <sld domain="tmp.br"/>
+    <sld domain="trd.br"/>
+    <sld domain="tur.br"/>
+    <sld domain="tv.br"/>
+    <sld domain="vet.br"/>
+    <sld domain="vlog.br"/>
+    <sld domain="wiki.br"/>
+    <sld domain="zlg.br"/>
+
+    <!-- Below elements are generated from the file at http://publicsuffix.org/. see org.apache.nutch.util.domain.MozillaPublicSuffixListParser.java -->
+
+    <!--  ac : http://en.wikipedia.org/wiki/.am-->
+    <sld domain="com.ac"/>
+    <sld domain="edu.ac"/>
+    <sld domain="gov.ac"/>
+    <sld domain="net.ac"/>
+    <sld domain="mil.ac"/>
+    <sld domain="org.ac"/>
+
+    <!--  ad : http://en.wikipedia.org/wiki/.ad-->
+    <sld domain="nom.ad"/>
+
+    <!--  ae : http://en.wikipedia.org/wiki/.ae-->
+    <sld domain="net.ae"/>
+    <sld domain="gov.ae"/>
+    <sld domain="ac.ae"/>
+    <sld domain="sch.ae"/>
+    <sld domain="org.ae"/>
+    <sld domain="mil.ae"/>
+    <sld domain="pro.ae"/>
+    <sld domain="name.ae"/>
+
+    <!--  aero : see http://www.information.aero/index.php?id=66-->
+    <sld domain="accident-investigation.aero"/>
+    <sld domain="accident-prevention.aero"/>
+    <sld domain="aerobatic.aero"/>
+    <sld domain="aeroclub.aero"/>
+    <sld domain="aerodrome.aero"/>
+    <sld domain="agents.aero"/>
+    <sld domain="aircraft.aero"/>
+    <sld domain="airline.aero"/>
+    <sld domain="airport.aero"/>
+    <sld domain="air-surveillance.aero"/>
+    <sld domain="airtraffic.aero"/>
+    <sld domain="air-traffic-control.aero"/>
+    <sld domain="ambulance.aero"/>
+    <sld domain="amusement.aero"/>
+    <sld domain="association.aero"/>
+    <sld domain="author.aero"/>
+    <sld domain="ballooning.aero"/>
+    <sld domain="broker.aero"/>
+    <sld domain="caa.aero"/>
+    <sld domain="cargo.aero"/>
+    <sld domain="catering.aero"/>
+    <sld domain="certification.aero"/>
+    <sld domain="championship.aero"/>
+    <sld domain="charter.aero"/>
+    <sld domain="civilaviation.aero"/>
+    <sld domain="club.aero"/>
+    <sld domain="conference.aero"/>
+    <sld domain="consultant.aero"/>
+    <sld domain="consulting.aero"/>
+    <sld domain="control.aero"/>
+    <sld domain="council.aero"/>
+    <sld domain="crew.aero"/>
+    <sld domain="design.aero"/>
+    <sld domain="dgca.aero"/>
+    <sld domain="educator.aero"/>
+    <sld domain="emergency.aero"/>
+    <sld domain="engine.aero"/>
+    <sld domain="engineer.aero"/>
+    <sld domain="entertainment.aero"/>
+    <sld domain="equipment.aero"/>
+    <sld domain="exchange.aero"/>
+    <sld domain="express.aero"/>
+    <sld domain="federation.aero"/>
+    <sld domain="flight.aero"/>
+    <sld domain="freight.aero"/>
+    <sld domain="fuel.aero"/>
+    <sld domain="gliding.aero"/>
+    <sld domain="government.aero"/>
+    <sld domain="groundhandling.aero"/>
+    <sld domain="group.aero"/>
+    <sld domain="hanggliding.aero"/>
+    <sld domain="homebuilt.aero"/>
+    <sld domain="insurance.aero"/>
+    <sld domain="journal.aero"/>
+    <sld domain="journalist.aero"/>
+    <sld domain="leasing.aero"/>
+    <sld domain="logistics.aero"/>
+    <sld domain="magazine.aero"/>
+    <sld domain="maintenance.aero"/>
+    <sld domain="marketplace.aero"/>
+    <sld domain="media.aero"/>
+    <sld domain="microlight.aero"/>
+    <sld domain="modelling.aero"/>
+    <sld domain="navigation.aero"/>
+    <sld domain="parachuting.aero"/>
+    <sld domain="paragliding.aero"/>
+    <sld domain="passenger-association.aero"/>
+    <sld domain="pilot.aero"/>
+    <sld domain="press.aero"/>
+    <sld domain="production.aero"/>
+    <sld domain="recreation.aero"/>
+    <sld domain="repbody.aero"/>
+    <sld domain="res.aero"/>
+    <sld domain="research.aero"/>
+    <sld domain="rotorcraft.aero"/>
+    <sld domain="safety.aero"/>
+    <sld domain="scientist.aero"/>
+    <sld domain="services.aero"/>
+    <sld domain="show.aero"/>
+    <sld domain="skydiving.aero"/>
+    <sld domain="software.aero"/>
+    <sld domain="student.aero"/>
+    <sld domain="taxi.aero"/>
+    <sld domain="trader.aero"/>
+    <sld domain="trading.aero"/>
+    <sld domain="trainer.aero"/>
+    <sld domain="union.aero"/>
+    <sld domain="workinggroup.aero"/>
+    <sld domain="works.aero"/>
+
+    <!--  af : http://www.nic.af/help.jsp-->
+    <sld domain="gov.af"/>
+    <sld domain="com.af"/>
+    <sld domain="org.af"/>
+    <sld domain="net.af"/>
+    <sld domain="edu.af"/>
+
+    <!--  ag : http://www.nic.ag/prices.htm-->
+    <sld domain="com.ag"/>
+    <sld domain="org.ag"/>
+    <sld domain="net.ag"/>
+    <sld domain="co.ag"/>
+    <sld domain="nom.ag"/>
+
+    <!--  ai : http://nic.com.ai/-->
+    <sld domain="off.ai"/>
+    <sld domain="com.ai"/>
+    <sld domain="net.ai"/>
+    <sld domain="org.ai"/>
+
+    <!--  al : http://www.inima.al/Domains.html-->
+    <sld domain="gov.al"/>
+    <sld domain="edu.al"/>
+    <sld domain="org.al"/>
+    <sld domain="com.al"/>
+    <sld domain="net.al"/>
+
+    <!--  am : http://en.wikipedia.org/wiki/.am-->
+
+    <!--  an : http://www.una.an/an_domreg/default.asp-->
+    <sld domain="com.an"/>
+    <sld domain="net.an"/>
+    <sld domain="org.an"/>
+    <sld domain="edu.an"/>
+
+    <!--  ao : http://en.wikipedia.org/wiki/.ao-->
+    <!--  list of 2nd level TLDs ?-->
+
+    <!--  aq : http://en.wikipedia.org/wiki/.aq-->
+
+    <!--  ar : http://en.wikipedia.org/wiki/.ar-->
+    <sld domain="congresodelalengua3.ar"/>
+    <sld domain="educ.ar"/>
+    <sld domain="gobiernoelectronico.ar"/>
+    <sld domain="mecon.ar"/>
+    <sld domain="nacion.ar"/>
+    <sld domain="nic.ar"/>
+    <sld domain="promocion.ar"/>
+    <sld domain="retina.ar"/>
+    <sld domain="uba.ar"/>
+
+    <sld domain="com.ar"/>
+    <sld domain="edu.ar"/>
+    <sld domain="gob.ar"/>
+    <sld domain="gov.ar"/>
+    <sld domain="int.ar"/>
+    <sld domain="mil.ar"/>
+    <sld domain="net.ar"/>
+    <sld domain="org.ar"/>
+    <sld domain="tur.ar"/>
+
+    <!--  arpa : http://en.wikipedia.org/wiki/.arpa-->
+    <sld domain="e164.arpa"/>
+    <sld domain="in-addr.arpa"/>
+    <sld domain="ip6.arpa"/>
+    <sld domain="uri.arpa"/>
+    <sld domain="urn.arpa"/>
+
+    <!--  as : http://en.wikipedia.org/wiki/.as-->
+
+    <!--  at : http://en.wikipedia.org/wiki/.at-->
+    <sld domain="gv.at"/>
+    <sld domain="ac.at"/>
+    <sld domain="co.at"/>
+    <sld domain="or.at"/>
+
+    <!--  au : http://en.wikipedia.org/wiki/.au-->
+    <!--  au geographical names (vic.au etc... are covered above)-->
+    <sld domain="act.edu.au"/>
+    <sld domain="nsw.edu.au"/>
+    <sld domain="nt.edu.au"/>
+    <sld domain="qld.edu.au"/>
+    <sld domain="sa.edu.au"/>
+    <sld domain="tas.edu.au"/>
+    <sld domain="vic.edu.au"/>
+    <sld domain="wa.edu.au"/>
+    <sld domain="act.gov.au"/>
+    <sld domain="nsw.gov.au"/>
+    <sld domain="nt.gov.au"/>
+    <sld domain="qld.gov.au"/>
+    <sld domain="sa.gov.au"/>
+    <sld domain="tas.gov.au"/>
+    <sld domain="vic.gov.au"/>
+    <sld domain="wa.gov.au"/>
+
+    <!--  aw : http://en.wikipedia.org/wiki/.aw-->
+    <sld domain="com.aw"/>
+
+    <!--  ax : http://en.wikipedia.org/wiki/.ax-->
+
+    <!--  az : http://en.wikipedia.org/wiki/.az-->
+    <sld domain="com.az"/>
+    <sld domain="net.az"/>
+    <sld domain="int.az"/>
+    <sld domain="gov.az"/>
+    <sld domain="org.az"/>
+    <sld domain="edu.az"/>
+    <sld domain="info.az"/>
+    <sld domain="pp.az"/>
+    <sld domain="mil.az"/>
+    <sld domain="name.az"/>
+    <sld domain="biz.az"/>
+
+    <!--  ba : http://en.wikipedia.org/wiki/.ba-->
+    <sld domain="org.ba"/>
+    <sld domain="net.ba"/>
+    <sld domain="edu.ba"/>
+    <sld domain="gov.ba"/>
+    <sld domain="mil.ba"/>
+    <sld domain="unsa.ba"/>
+    <sld domain="unbi.ba"/>
+    <sld domain="co.ba"/>
+    <sld domain="com.ba"/>
+    <sld domain="rs.ba"/>
+
+    <!--  bb : http://en.wikipedia.org/wiki/.bb-->
+    <sld domain="com.bb"/>
+    <sld domain="edu.bb"/>
+    <sld domain="gov.bb"/>
+    <sld domain="net.bb"/>
+    <sld domain="org.bb"/>
+
+    <!--  bd : http://en.wikipedia.org/wiki/.bd-->
+
+    <!--  be : http://en.wikipedia.org/wiki/.be-->
+    <sld domain="ac.be"/>
+
+    <!--  bf : http://en.wikipedia.org/wiki/.bf-->
+
+    <!--  bg : http://en.wikipedia.org/wiki/.bg-->
+
+    <!--  bh : http://en.wikipedia.org/wiki/.bh-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  bi : http://en.wikipedia.org/wiki/.bi-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  biz : http://en.wikipedia.org/wiki/.biz-->
+
+    <!--  bj : http://en.wikipedia.org/wiki/.bj-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  bm : http://www.bermudanic.bm/dnr-text.txt-->
+    <sld domain="com.bm"/>
+    <sld domain="edu.bm"/>
+    <sld domain="gov.bm"/>
+    <sld domain="net.bm"/>
+    <sld domain="org.bm"/>
+
+    <!--  bn : http://en.wikipedia.org/wiki/.bn-->
+
+    <!--  bo : http://www.nic.bo/-->
+    <sld domain="com.bo"/>
+    <sld domain="edu.bo"/>
+    <sld domain="gov.bo"/>
+    <sld domain="gob.bo"/>
+    <sld domain="int.bo"/>
+    <sld domain="org.bo"/>
+    <sld domain="net.bo"/>
+    <sld domain="mil.bo"/>
+    <sld domain="tv.bo"/>
+
+    <!--  br : http://en.wikipedia.org/wiki/.br-->
+
+    <!--  bs : http://www.nic.bs/rules.html-->
+    <sld domain="com.bs"/>
+    <sld domain="net.bs"/>
+    <sld domain="org.bs"/>
+    <sld domain="edu.bs"/>
+    <sld domain="gov.bs"/>
+
+    <!--  bt : http://en.wikipedia.org/wiki/.bt-->
+
+    <!--  bw : http://en.wikipedia.org/wiki/.bw-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  by : http://en.wikipedia.org/wiki/.by-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  bz : http://en.wikipedia.org/wiki/.bz-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  ca : http://en.wikipedia.org/wiki/.ca-->
+    <!--  ca geographical names-->
+    <sld domain="ab.ca"/>
+    <sld domain="bc.ca"/>
+    <sld domain="mb.ca"/>
+    <sld domain="nb.ca"/>
+    <sld domain="nf.ca"/>
+    <sld domain="nl.ca"/>
+    <sld domain="ns.ca"/>
+    <sld domain="nt.ca"/>
+    <sld domain="nu.ca"/>
+    <sld domain="on.ca"/>
+    <sld domain="pe.ca"/>
+    <sld domain="qc.ca"/>
+    <sld domain="sk.ca"/>
+    <sld domain="yk.ca"/>
+
+    <!--  cat : http://en.wikipedia.org/wiki/.cat-->
+
+    <!--  cc : http://en.wikipedia.org/wiki/.cc-->
+
+    <!--  cd : http://en.wikipedia.org/wiki/.cd-->
+
+    <!--  cf : http://en.wikipedia.org/wiki/.cf-->
+
+    <!--  cg : http://en.wikipedia.org/wiki/.cg-->
+
+    <!--  ch : http://en.wikipedia.org/wiki/.ch-->
+
+    <!--  ci : http://en.wikipedia.org/wiki/.ci-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  ck : http://en.wikipedia.org/wiki/.ck-->
+
+    <!--  cl : http://en.wikipedia.org/wiki/.cl-->
+
+    <!--  cm : http://en.wikipedia.org/wiki/.cm-->
+
+    <!--  cn : http://en.wikipedia.org/wiki/.cn-->
+    <sld domain="ac.cn"/>
+    <sld domain="com.cn"/>
+    <sld domain="edu.cn"/>
+    <sld domain="gov.cn"/>
+    <sld domain="net.cn"/>
+    <sld domain="org.cn"/>
+    <!--  cn geographic names-->
+    <sld domain="ah.cn"/>
+    <sld domain="bj.cn"/>
+    <sld domain="cq.cn"/>
+    <sld domain="fj.cn"/>
+    <sld domain="gd.cn"/>
+    <sld domain="gs.cn"/>
+    <sld domain="gz.cn"/>
+    <sld domain="gx.cn"/>
+    <sld domain="ha.cn"/>
+    <sld domain="hb.cn"/>
+    <sld domain="he.cn"/>
+    <sld domain="hi.cn"/>
+    <sld domain="hl.cn"/>
+    <sld domain="hn.cn"/>
+    <sld domain="jl.cn"/>
+    <sld domain="js.cn"/>
+    <sld domain="jx.cn"/>
+    <sld domain="ln.cn"/>
+    <sld domain="nm.cn"/>
+    <sld domain="nx.cn"/>
+    <sld domain="qh.cn"/>
+    <sld domain="sc.cn"/>
+    <sld domain="sd.cn"/>
+    <sld domain="sh.cn"/>
+    <sld domain="sn.cn"/>
+    <sld domain="sx.cn"/>
+    <sld domain="tj.cn"/>
+    <sld domain="xj.cn"/>
+    <sld domain="xz.cn"/>
+    <sld domain="yn.cn"/>
+    <sld domain="zj.cn"/>
+
+    <!--  co : http://en.wikipedia.org/wiki/.co-->
+
+    <sld domain="com.co"/>
+    <sld domain="org.co"/>
+    <sld domain="edu.co"/>
+    <sld domain="gov.co"/>
+    <sld domain="net.co"/>
+    <sld domain="mil.co"/>
+    <sld domain="nom.co"/>
+
+    <!--  com : http://en.wikipedia.org/wiki/.com-->
+
+    <!--  coop : http://en.wikipedia.org/wiki/.coop-->
+
+    <!--  cr : http://en.wikipedia.org/wiki/.cr-->
+
+    <!--  cu : http://en.wikipedia.org/wiki/.cu-->
+    <sld domain="com.cu"/>
+    <sld domain="edu.cu"/>
+    <sld domain="org.cu"/>
+    <sld domain="net.cu"/>
+    <sld domain="gov.cu"/>
+    <sld domain="inf.cu"/>
+
+    <!--  cv : http://en.wikipedia.org/wiki/.cv-->
+
+    <!--  cx : http://en.wikipedia.org/wiki/.cx-->
+
+    <!--  cy : http://en.wikipedia.org/wiki/.cy-->
+
+    <!--  cz : http://en.wikipedia.org/wiki/.cz-->
+
+    <!--  de : http://en.wikipedia.org/wiki/.de-->
+
+    <!--  dj : http://en.wikipedia.org/wiki/.dj-->
+
+    <!--  dk : http://en.wikipedia.org/wiki/.dk-->
+
+    <!--  dm : http://en.wikipedia.org/wiki/.dm-->
+    <sld domain="com.dm"/>
+    <sld domain="net.dm"/>
+    <sld domain="org.dm"/>
+
+    <!--  do : http://en.wikipedia.org/wiki/.do-->
+
+    <!--  dz : http://en.wikipedia.org/wiki/.dz-->
+    <sld domain="com.dz"/>
+    <sld domain="org.dz"/>
+    <sld domain="net.dz"/>
+    <sld domain="gov.dz"/>
+    <sld domain="edu.dz"/>
+    <sld domain="asso.dz"/>
+    <sld domain="pol.dz"/>
+    <sld domain="art.dz"/>
+
+    <!--  ec : http://www.nic.ec/reg/paso1.asp-->
+    <sld domain="com.ec"/>
+    <sld domain="info.ec"/>
+    <sld domain="net.ec"/>
+    <sld domain="fin.ec"/>
+    <sld domain="med.ec"/>
+    <sld domain="pro.ec"/>
+    <sld domain="org.ec"/>
+    <sld domain="edu.ec"/>
+    <sld domain="gov.ec"/>
+    <sld domain="mil.ec"/>
+
+    <!--  edu : http://en.wikipedia.org/wiki/.edu-->
+
+    <!--  ee : http://www3.eenet.ee/ee/application.html-->
+    <sld domain="com.ee"/>
+    <sld domain="org.ee"/>
+    <sld domain="fie.ee"/>
+    <sld domain="pri.ee"/>
+
+    <!--  eg : http://en.wikipedia.org/wiki/.eg-->
+
+    <!--  er : http://en.wikipedia.org/wiki/.er-->
+
+    <!--  es : https://www.nic.es/site_ingles/ingles/dominios/index.html-->
+    <sld domain="com.es"/>
+    <sld domain="nom.es"/>
+    <sld domain="org.es"/>
+    <sld domain="gob.es"/>
+    <sld domain="edu.es"/>
+
+    <!--  et : http://en.wikipedia.org/wiki/.et-->
+
+    <!--  eu : http://en.wikipedia.org/wiki/.eu-->
+
+    <!--  fi : http://en.wikipedia.org/wiki/.fi-->
+
+    <!--  fj : http://en.wikipedia.org/wiki/.fj-->
+
+    <!--  fk : http://en.wikipedia.org/wiki/.fk-->
+
+    <!--  fm : http://en.wikipedia.org/wiki/.fm-->
+
+    <!--  fo : http://en.wikipedia.org/wiki/.fo-->
+
+    <!--  fr : http://www.afnic.fr/-->
+    <!--  domaines descriptifs : http://www.afnic.fr/obtenir/chartes/nommage-fr/annexe-descriptifs-->
+    <sld domain="com.fr"/>
+    <sld domain="asso.fr"/>
+    <sld domain="nom.fr"/>
+    <sld domain="prd.fr"/>
+    <sld domain="presse.fr"/>
+    <sld domain="tm.fr"/>
+    <!--  domaines sectoriels : http://www.afnic.fr/obtenir/chartes/nommage-fr/annexe-sectoriels-->
+    <sld domain="aeroport.fr"/>
+    <sld domain="assedic.fr"/>
+    <sld domain="avocat.fr"/>
+    <sld domain="avoues.fr"/>
+    <sld domain="cci.fr"/>
+    <sld domain="chambagri.fr"/>
+    <sld domain="chirurgiens-dentistes.fr"/>
+    <sld domain="experts-comptables.fr"/>
+    <sld domain="geometre-expert.fr"/>
+    <sld domain="gouv.fr"/>
+    <sld domain="greta.fr"/>
+    <sld domain="huissier-justice.fr"/>
+    <sld domain="medecin.fr"/>
+    <sld domain="notaires.fr"/>
+    <sld domain="pharmacien.fr"/>
+    <sld domain="port.fr"/>
+    <sld domain="veterinaire.fr"/>
+
+    <!--  ga : http://en.wikipedia.org/wiki/.ga-->
+
+    <!--  gd : http://en.wikipedia.org/wiki/.gd-->
+
+    <!--  ge : http://www.nic.net.ge/policy_en.pdf-->
+    <sld domain="com.ge"/>
+    <sld domain="edu.ge"/>
+    <sld domain="gov.ge"/>
+    <sld domain="org.ge"/>
+    <sld domain="mil.ge"/>
+    <sld domain="net.ge"/>
+    <sld domain="pvt.ge"/>
+
+    <!--  gf : http://en.wikipedia.org/wiki/.gf-->
+
+    <!--  gg : http://www.channelisles.net/tandc.shtml-->
+    <sld domain="co.gg"/>
+    <sld domain="org.gg"/>
+    <sld domain="net.gg"/>
+    <sld domain="sch.gg"/>
+    <sld domain="gov.gg"/>
+
+    <!--  gh : http://www.ghana.com/domain.htm-->
+
+    <!--  gi : http://www.nic.gi/rules.html-->
+    <sld domain="com.gi"/>
+    <sld domain="ltd.gi"/>
+    <sld domain="gov.gi"/>
+    <sld domain="mod.gi"/>
+    <sld domain="edu.gi"/>
+    <sld domain="org.gi"/>
+
+    <!--  gl : http://en.wikipedia.org/wiki/.gl-->
+
+    <!--  gm : http://www.nic.gm/htmlpages%5Cgm-policy.htm-->
+
+    <!--  gn : http://psg.com/dns/gn/gn.txt-->
+
+    <!--  gov : http://en.wikipedia.org/wiki/.gov-->
+
+    <!--  gp : http://www.nic.gp/index_en.php?url=charte_en.php-->
+    <sld domain="com.gp"/>
+    <sld domain="net.gp"/>
+    <sld domain="edu.gp"/>
+    <sld domain="org.gp"/>
+
+    <!--  gq : http://en.wikipedia.org/wiki/.gq-->
+
+    <!--  gr : https://grweb.ics.forth.gr/english/1617-B-2002.html-->
+    <sld domain="com.gr"/>
+    <sld domain="edu.gr"/>
+    <sld domain="net.gr"/>
+    <sld domain="org.gr"/>
+    <sld domain="gov.gr"/>
+
+    <!--  gs : http://en.wikipedia.org/wiki/.gs-->
+
+    <!--  gt : http://www.gt/politicas.html-->
+
+    <!--  gu : http://gadao.gov.gu/registration.txt-->
+
+    <!--  gw : http://en.wikipedia.org/wiki/.gw-->
+
+    <!--  gy : http://en.wikipedia.org/wiki/.gy-->
+
+    <!--  hk : http://en.wikipedia.org/wiki/.hk-->
+    <sld domain="com.hk"/>
+    <sld domain="edu.hk"/>
+    <sld domain="gov.hk"/>
+    <sld domain="idv.hk"/>
+    <sld domain="net.hk"/>
+    <sld domain="org.hk"/>
+
+    <!--  hm : http://en.wikipedia.org/wiki/.hm-->
+
+    <!--  hn : http://www.nic.hn/politicas/ps02,,05.html-->
+    <sld domain="com.hn"/>
+    <sld domain="edu.hn"/>
+    <sld domain="org.hn"/>
+    <sld domain="net.hn"/>
+    <sld domain="mil.hn"/>
+    <sld domain="gob.hn"/>
+
+    <!--  hr : http://www.dns.hr/documents/pdf/HRTLD-regulations.pdf-->
+    <sld domain="iz.hr"/>
+    <sld domain="from.hr"/>
+    <sld domain="name.hr"/>
+    <sld domain="com.hr"/>
+
+    <!--  ht : http://www.nic.ht/info/charte.cfm-->
+    <sld domain="com.ht"/>
+    <sld domain="shop.ht"/>
+    <sld domain="firm.ht"/>
+    <sld domain="info.ht"/>
+    <sld domain="adult.ht"/>
+    <sld domain="net.ht"/>
+    <sld domain="pro.ht"/>
+    <sld domain="org.ht"/>
+    <sld domain="med.ht"/>
+    <sld domain="art.ht"/>
+    <sld domain="coop.ht"/>
+    <sld domain="pol.ht"/>
+    <sld domain="asso.ht"/>
+    <sld domain="edu.ht"/>
+    <sld domain="rel.ht"/>
+    <sld domain="gouv.ht"/>
+    <sld domain="perso.ht"/>
+
+    <!--  hu : http://www.domain.hu/domain/English/sld.html-->
+    <sld domain="co.hu"/>
+    <sld domain="info.hu"/>
+    <sld domain="org.hu"/>
+    <sld domain="priv.hu"/>
+    <sld domain="sport.hu"/>
+    <sld domain="tm.hu"/>
+    <sld domain="2000.hu"/>
+    <sld domain="agrar.hu"/>
+    <sld domain="bolt.hu"/>
+    <sld domain="casino.hu"/>
+    <sld domain="city.hu"/>
+    <sld domain="erotica.hu"/>
+    <sld domain="erotika.hu"/>
+    <sld domain="film.hu"/>
+    <sld domain="forum.hu"/>
+    <sld domain="games.hu"/>
+    <sld domain="hotel.hu"/>
+    <sld domain="ingatlan.hu"/>
+    <sld domain="jogasz.hu"/>
+    <sld domain="konyvelo.hu"/>
+    <sld domain="lakas.hu"/>
+    <sld domain="media.hu"/>
+    <sld domain="news.hu"/>
+    <sld domain="reklam.hu"/>
+    <sld domain="sex.hu"/>
+    <sld domain="shop.hu"/>
+    <sld domain="suli.hu"/>
+    <sld domain="szex.hu"/>
+    <sld domain="tozsde.hu"/>
+    <sld domain="utazas.hu"/>
+    <sld domain="video.hu"/>
+
+    <!--  id : http://en.wikipedia.org/wiki/.id-->
+
+    <sld domain="ac.id"/>
+    <sld domain="co.id"/>
+    <sld domain="net.id"/>
+    <sld domain="or.id"/>
+    <sld domain="web.id"/>
+    <sld domain="sch.id"/>
+    <sld domain="mil.id"/>
+    <sld domain="go.id"/>
+
+    <!--  ie : http://en.wikipedia.org/wiki/.ie-->
+
+    <!--  il : http://en.wikipedia.org/wiki/.il-->
+    <sld domain="ac.il"/>
+    <sld domain="co.il"/>
+    <sld domain="org.il"/>
+    <sld domain="net.il"/>
+    <sld domain="k12.il"/>
+    <sld domain="gov.il"/>
+    <sld domain="muni.il"/>
+    <sld domain="idf.il"/>
+
+    <!--  im : https://www.nic.im/pdfs/imfaqs.pdf-->
+    <sld domain="co.im"/>
+    <sld domain="ltd.co.im"/>
+    <sld domain="plc.co.im"/>
+    <sld domain="net.im"/>
+    <sld domain="gov.im"/>
+    <sld domain="org.im"/>
+    <sld domain="nic.im"/>
+    <sld domain="ac.im"/>
+
+    <!--  in : http://en.wikipedia.org/wiki/.in-->
+    <sld domain="co.in"/>
+    <sld domain="firm.in"/>
+    <sld domain="net.in"/>
+    <sld domain="org.in"/>
+    <sld domain="gen.in"/>
+    <sld domain="ind.in"/>
+    <sld domain="nic.in"/>
+    <sld domain="ac.in"/>
+    <sld domain="edu.in"/>
+    <sld domain="res.in"/>
+    <sld domain="gov.in"/>
+    <sld domain="mil.in"/>
+
+    <!--  info : http://en.wikipedia.org/wiki/.info-->
+
+    <!--  int : http://en.wikipedia.org/wiki/.int-->
+
+    <!--  io : http://www.nic.io/rules.html-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  iq : http://en.wikipedia.org/wiki/.iq-->
+    <!--  no registrar website found, but google shows .gov.iq and .edu.iq websites-->
+    <sld domain="gov.iq"/>
+    <sld domain="edu.iq"/>
+
+    <!--  ir : http://www.nic.ir/ascii/Appendix1.htm-->
+    <sld domain="ac.ir"/>
+    <sld domain="co.ir"/>
+    <sld domain="gov.ir"/>
+    <sld domain="id.ir"/>
+    <sld domain="net.ir"/>
+    <sld domain="org.ir"/>
+    <sld domain="sch.ir"/>
+
+    <!--  is : http://www.isnic.is/domain/rules.php-->
+    <sld domain="net.is"/>
+    <sld domain="com.is"/>
+    <sld domain="edu.is"/>
+    <sld domain="gov.is"/>
+    <sld domain="org.is"/>
+    <sld domain="int.is"/>
+
+    <!--  it : http://en.wikipedia.org/wiki/.it-->
+    <sld domain="gov.edu"/>
+    <!--  geo-names found at http://www.nic.it/RA/en/domini/regole/nomi-riservati.pdf-->
+    <sld domain="agrigento.it"/>
+    <sld domain="ag.it"/>
+    <sld domain="alessandria.it"/>
+    <sld domain="al.it"/>
+    <sld domain="ancona.it"/>
+    <sld domain="an.it"/>
+    <sld domain="aosta.it"/>
+    <sld domain="aoste.it"/>
+    <sld domain="ao.it"/>
+    <sld domain="arezzo.it"/>
+    <sld domain="ar.it"/>
+    <sld domain="ascoli-piceno.it"/>
+    <sld domain="ascolipiceno.it"/>
+    <sld domain="ap.it"/>
+    <sld domain="asti.it"/>
+    <sld domain="at.it"/>
+    <sld domain="avellino.it"/>
+    <sld domain="av.it"/>
+    <sld domain="bari.it"/>
+    <sld domain="ba.it"/>
+    <sld domain="barlettaandriatrani.it"/>
+    <sld domain="barletta-andria-trani.it"/>
+    <sld domain="belluno.it"/>
+    <sld domain="bl.it"/>
+    <sld domain="benevento.it"/>
+    <sld domain="bn.it"/>
+    <sld domain="bergamo.it"/>
+    <sld domain="bg.it"/>
+    <sld domain="biella.it"/>
+    <sld domain="bi.it"/>
+    <sld domain="bologna.it"/>
+    <sld domain="bo.it"/>
+    <sld domain="bolzano.it"/>
+    <sld domain="bozen.it"/>
+    <sld domain="balsan.it"/>
+    <sld domain="alto-adige.it"/>
+    <sld domain="altoadige.it"/>
+    <sld domain="suedtirol.it"/>
+    <sld domain="bz.it"/>
+    <sld domain="brescia.it"/>
+    <sld domain="bs.it"/>
+    <sld domain="brindisi.it"/>
+    <sld domain="br.it"/>
+    <sld domain="cagliari.it"/>
+    <sld domain="ca.it"/>
+    <sld domain="caltanissetta.it"/>
+    <sld domain="cl.it"/>
+    <sld domain="campobasso.it"/>
+    <sld domain="cb.it"/>
+    <sld domain="caserta.it"/>
+    <sld domain="ce.it"/>
+    <sld domain="catania.it"/>
+    <sld domain="ct.it"/>
+    <sld domain="catanzaro.it"/>
+    <sld domain="cz.it"/>
+    <sld domain="chieti.it"/>
+    <sld domain="ch.it"/>
+    <sld domain="como.it"/>
+    <sld domain="co.it"/>
+    <sld domain="cosenza.it"/>
+    <sld domain="cs.it"/>
+    <sld domain="cremona.it"/>
+    <sld domain="cr.it"/>
+    <sld domain="crotone.it"/>
+    <sld domain="kr.it"/>
+    <sld domain="cuneo.it"/>
+    <sld domain="cn.it"/>
+    <sld domain="enna.it"/>
+    <sld domain="en.it"/>
+    <sld domain="fermo.it"/>
+    <sld domain="ferrara.it"/>
+    <sld domain="fe.it"/>
+    <sld domain="firenze.it"/>
+    <sld domain="florence.it"/>
+    <sld domain="fi.it"/>
+    <sld domain="foggia.it"/>
+    <sld domain="fg.it"/>
+    <sld domain="forli-cesena.it"/>
+    <sld domain="forlicesena.it"/>
+    <sld domain="fc.it"/>
+    <sld domain="frosinone.it"/>
+    <sld domain="fr.it"/>
+    <sld domain="genova.it"/>
+    <sld domain="genoa.it"/>
+    <sld domain="ge.it"/>
+    <sld domain="gorizia.it"/>
+    <sld domain="go.it"/>
+    <sld domain="grosseto.it"/>
+    <sld domain="gr.it"/>
+    <sld domain="imperia.it"/>
+    <sld domain="im.it"/>
+    <sld domain="isernia.it"/>
+    <sld domain="is.it"/>
+    <sld domain="laquila.it"/>
+    <sld domain="aquila.it"/>
+    <sld domain="aq.it"/>
+    <sld domain="la-spezia.it"/>
+    <sld domain="laspezia.it"/>
+    <sld domain="sp.it"/>
+    <sld domain="latina.it"/>
+    <sld domain="lt.it"/>
+    <sld domain="lecce.it"/>
+    <sld domain="le.it"/>
+    <sld domain="lecco.it"/>
+    <sld domain="lc.it"/>
+    <sld domain="livorno.it"/>
+    <sld domain="li.it"/>
+    <sld domain="lodi.it"/>
+    <sld domain="lo.it"/>
+    <sld domain="lucca.it"/>
+    <sld domain="lu.it"/>
+    <sld domain="macerata.it"/>
+    <sld domain="mc.it"/>
+    <sld domain="mantova.it"/>
+    <sld domain="mn.it"/>
+    <sld domain="massa-carrara.it"/>
+    <sld domain="massacarrara.it"/>
+    <sld domain="ms.it"/>
+    <sld domain="matera.it"/>
+    <sld domain="mt.it"/>
+    <sld domain="messina.it"/>
+    <sld domain="me.it"/>
+    <sld domain="milano.it"/>
+    <sld domain="milan.it"/>
+    <sld domain="mi.it"/>
+    <sld domain="modena.it"/>
+    <sld domain="mo.it"/>
+    <sld domain="monza.it"/>
+    <sld domain="napoli.it"/>
+    <sld domain="naples.it"/>
+    <sld domain="na.it"/>
+    <sld domain="novara.it"/>
+    <sld domain="no.it"/>
+    <sld domain="nuoro.it"/>
+    <sld domain="nu.it"/>
+    <sld domain="oristano.it"/>
+    <sld domain="or.it"/>
+    <sld domain="padova.it"/>
+    <sld domain="padua.it"/>
+    <sld domain="pd.it"/>
+    <sld domain="palermo.it"/>
+    <sld domain="pa.it"/>
+    <sld domain="parma.it"/>
+    <sld domain="pr.it"/>
+    <sld domain="pavia.it"/>
+    <sld domain="pv.it"/>
+    <sld domain="perugia.it"/>
+    <sld domain="pg.it"/>
+    <sld domain="pescara.it"/>
+    <sld domain="pe.it"/>
+    <sld domain="pesaro-urbino.it"/>
+    <sld domain="pesarourbino.it"/>
+    <sld domain="pu.it"/>
+    <sld domain="piacenza.it"/>
+    <sld domain="pc.it"/>
+    <sld domain="pisa.it"/>
+    <sld domain="pi.it"/>
+    <sld domain="pistoia.it"/>
+    <sld domain="pt.it"/>
+    <sld domain="pordenone.it"/>
+    <sld domain="pn.it"/>
+    <sld domain="potenza.it"/>
+    <sld domain="pz.it"/>
+    <sld domain="prato.it"/>
+    <sld domain="po.it"/>
+    <sld domain="ragusa.it"/>
+    <sld domain="rg.it"/>
+    <sld domain="ravenna.it"/>
+    <sld domain="ra.it"/>
+    <sld domain="reggio-calabria.it"/>
+    <sld domain="reggiocalabria.it"/>
+    <sld domain="rc.it"/>
+    <sld domain="reggio-emilia.it"/>
+    <sld domain="reggioemilia.it"/>
+    <sld domain="re.it"/>
+    <sld domain="rieti.it"/>
+    <sld domain="ri.it"/>
+    <sld domain="rimini.it"/>
+    <sld domain="rn.it"/>
+    <sld domain="roma.it"/>
+    <sld domain="rome.it"/>
+    <sld domain="rm.it"/>
+    <sld domain="rovigo.it"/>
+    <sld domain="ro.it"/>
+    <sld domain="salerno.it"/>
+    <sld domain="sa.it"/>
+    <sld domain="sassari.it"/>
+    <sld domain="ss.it"/>
+    <sld domain="savona.it"/>
+    <sld domain="sv.it"/>
+    <sld domain="siena.it"/>
+    <sld domain="si.it"/>
+    <sld domain="siracusa.it"/>
+    <sld domain="sr.it"/>
+    <sld domain="sondrio.it"/>
+    <sld domain="so.it"/>
+    <sld domain="taranto.it"/>
+    <sld domain="ta.it"/>
+    <sld domain="teramo.it"/>
+    <sld domain="te.it"/>
+    <sld domain="terni.it"/>
+    <sld domain="tr.it"/>
+    <sld domain="torino.it"/>
+    <sld domain="turin.it"/>
+    <sld domain="to.it"/>
+    <sld domain="trapani.it"/>
+    <sld domain="tp.it"/>
+    <sld domain="trento.it"/>
+    <sld domain="trentino.it"/>
+    <sld domain="tn.it"/>
+    <sld domain="treviso.it"/>
+    <sld domain="tv.it"/>
+    <sld domain="trieste.it"/>
+    <sld domain="ts.it"/>
+    <sld domain="udine.it"/>
+    <sld domain="ud.it"/>
+    <sld domain="varese.it"/>
+    <sld domain="va.it"/>
+    <sld domain="venezia.it"/>
+    <sld domain="venice.it"/>
+    <sld domain="ve.it"/>
+    <sld domain="verbania.it"/>
+    <sld domain="vb.it"/>
+    <sld domain="vercelli.it"/>
+    <sld domain="vc.it"/>
+    <sld domain="verona.it"/>
+    <sld domain="vr.it"/>
+    <sld domain="vibo-valentia.it"/>
+    <sld domain="vibovalentia.it"/>
+    <sld domain="vv.it"/>
+    <sld domain="vicenza.it"/>
+    <sld domain="vi.it"/>
+    <sld domain="viterbo.it"/>
+    <sld domain="vt.it"/>
+
+    <!--  je : http://www.channelisles.net/tandc.shtml-->
+    <sld domain="co.je"/>
+    <sld domain="org.je"/>
+    <sld domain="net.je"/>
+    <sld domain="sch.je"/>
+    <sld domain="gov.je"/>
+
+    <!--  jm : http://www.com.jm/register.html-->
+
+    <!--  jo : http://www.nis.gov.jo/dns/reg.html-->
+    <sld domain="com.jo"/>
+    <sld domain="org.jo"/>
+    <sld domain="net.jo"/>
+    <sld domain="edu.jo"/>
+    <sld domain="gov.jo"/>
+    <sld domain="mil.jo"/>
+    <sld domain="myname.jo"/>
+
+    <!--  jobs : http://en.wikipedia.org/wiki/.jobs-->
+
+    <!--  jp : http://en.wikipedia.org/wiki/.jp-->
+    <sld domain="ac.jp"/>
+    <sld domain="ad.jp"/>
+    <sld domain="co.jp"/>
+    <sld domain="ed.jp"/>
+    <sld domain="go.jp"/>
+    <sld domain="gr.jp"/>
+    <sld domain="lg.jp"/>
+    <sld domain="ne.jp"/>
+    <sld domain="or.jp"/>
+    <!--  jp geographical names-->
+    <!--  I can't find an official english explanantrion, but used https://bugzilla.mozilla.org/show_bug.cgi?id=252342#c31-->
+    <sld domain="aichi.jp"/>
+    <sld domain="akita.jp"/>
+    <sld domain="aomori.jp"/>
+    <sld domain="chiba.jp"/>
+    <sld domain="ehime.jp"/>
+    <sld domain="fukui.jp"/>
+    <sld domain="fukuoka.jp"/>
+    <sld domain="fukushima.jp"/>
+    <sld domain="gifu.jp"/>
+    <sld domain="gunma.jp"/>
+    <sld domain="hiroshima.jp"/>
+    <sld domain="hokkaido.jp"/>
+    <sld domain="hyogo.jp"/>
+    <sld domain="ibaraki.jp"/>
+    <sld domain="ishikawa.jp"/>
+    <sld domain="iwate.jp"/>
+    <sld domain="kagawa.jp"/>
+    <sld domain="kagoshima.jp"/>
+    <sld domain="kanagawa.jp"/>
+    <sld domain="kawasaki.jp"/>
+    <sld domain="kitakyushu.jp"/>
+    <sld domain="kobe.jp"/>
+    <sld domain="kochi.jp"/>
+    <sld domain="kumamoto.jp"/>
+    <sld domain="kyoto.jp"/>
+    <sld domain="mie.jp"/>
+    <sld domain="miyagi.jp"/>
+    <sld domain="miyazaki.jp"/>
+    <sld domain="nagano.jp"/>
+    <sld domain="nagasaki.jp"/>
+    <sld domain="nagoya.jp"/>
+    <sld domain="nara.jp"/>
+    <sld domain="niigata.jp"/>
+    <sld domain="oita.jp"/>
+    <sld domain="okayama.jp"/>
+    <sld domain="okinawa.jp"/>
+    <sld domain="osaka.jp"/>
+    <sld domain="saga.jp"/>
+    <sld domain="saitama.jp"/>
+    <sld domain="sapporo.jp"/>
+    <sld domain="sendai.jp"/>
+    <sld domain="shiga.jp"/>
+    <sld domain="shimane.jp"/>
+    <sld domain="shizuoka.jp"/>
+    <sld domain="tochigi.jp"/>
+    <sld domain="tokushima.jp"/>
+    <sld domain="tokyo.jp"/>
+    <sld domain="tottori.jp"/>
+    <sld domain="toyama.jp"/>
+    <sld domain="wakayama.jp"/>
+    <sld domain="yamagata.jp"/>
+    <sld domain="yamaguchi.jp"/>
+    <sld domain="yamanashi.jp"/>
+    <sld domain="yokohama.jp"/>
+    <sld domain="metro.tokyo.jp"/>
+    <sld domain="pref.aichi.jp"/>
+    <sld domain="pref.akita.jp"/>
+    <sld domain="pref.aomori.jp"/>
+    <sld domain="pref.chiba.jp"/>
+    <sld domain="pref.ehime.jp"/>
+    <sld domain="pref.fukui.jp"/>
+    <sld domain="pref.fukuoka.jp"/>
+    <sld domain="pref.fukushima.jp"/>
+    <sld domain="pref.gifu.jp"/>
+    <sld domain="pref.gunma.jp"/>
+    <sld domain="pref.hiroshima.jp"/>
+    <sld domain="pref.hokkaido.jp"/>
+    <sld domain="pref.hyogo.jp"/>
+    <sld domain="pref.ibaraki.jp"/>
+    <sld domain="pref.ishikawa.jp"/>
+    <sld domain="pref.iwate.jp"/>
+    <sld domain="pref.kagawa.jp"/>
+    <sld domain="pref.kagoshima.jp"/>
+    <sld domain="pref.kanagawa.jp"/>
+    <sld domain="pref.kochi.jp"/>
+    <sld domain="pref.kumamoto.jp"/>
+    <sld domain="pref.kyoto.jp"/>
+    <sld domain="pref.mie.jp"/>
+    <sld domain="pref.miyagi.jp"/>
+    <sld domain="pref.miyazaki.jp"/>
+    <sld domain="pref.nagano.jp"/>
+    <sld domain="pref.nagasaki.jp"/>
+    <sld domain="pref.nara.jp"/>
+    <sld domain="pref.niigata.jp"/>
+    <sld domain="pref.oita.jp"/>
+    <sld domain="pref.okayama.jp"/>
+    <sld domain="pref.okinawa.jp"/>
+    <sld domain="pref.osaka.jp"/>
+    <sld domain="pref.saga.jp"/>
+    <sld domain="pref.saitama.jp"/>
+    <sld domain="pref.shiga.jp"/>
+    <sld domain="pref.shimane.jp"/>
+    <sld domain="pref.shizuoka.jp"/>
+    <sld domain="pref.tochigi.jp"/>
+    <sld domain="pref.tokushima.jp"/>
+    <sld domain="pref.tottori.jp"/>
+    <sld domain="pref.toyama.jp"/>
+    <sld domain="pref.wakayama.jp"/>
+    <sld domain="pref.yamagata.jp"/>
+    <sld domain="pref.yamaguchi.jp"/>
+    <sld domain="pref.yamanashi.jp"/>
+    <sld domain="city.chiba.jp"/>
+    <sld domain="city.fukuoka.jp"/>
+    <sld domain="city.hiroshima.jp"/>
+    <sld domain="city.kawasaki.jp"/>
+    <sld domain="city.kitakyushu.jp"/>
+    <sld domain="city.kobe.jp"/>
+    <sld domain="city.kyoto.jp"/>
+    <sld domain="city.nagoya.jp"/>
+    <sld domain="city.osaka.jp"/>
+    <sld domain="city.saitama.jp"/>
+    <sld domain="city.sapporo.jp"/>
+    <sld domain="city.sendai.jp"/>
+    <sld domain="city.shizuoka.jp"/>
+    <sld domain="city.yokohama.jp"/>
+
+    <!--  ke : http://www.kenic.or.ke/index.php?option=com_content&task=view&id=117&Itemid=145-->
+
+    <!--  kg : http://www.domain.kg/dmn_n.html-->
+    <sld domain="org.kg"/>
+    <sld domain="net.kg"/>
+    <sld domain="com.kg"/>
+    <sld domain="edu.kg"/>
+    <sld domain="gov.kg"/>
+    <sld domain="mil.kg"/>
+
+    <!--  kh : http://www.mptc.gov.kh/dns_registration.htm-->
+
+    <!--  ki : http://www.ki/dns/index.html-->
+    <sld domain="edu.ki"/>
+    <sld domain="biz.ki"/>
+    <sld domain="net.ki"/>
+    <sld domain="org.ki"/>
+    <sld domain="gov.ki"/>
+    <sld domain="info.ki"/>
+    <sld domain="com.ki"/>
+
+    <!--  km : http://en.wikipedia.org/wiki/.km-->
+
+    <!--  kn : http://en.wikipedia.org/wiki/.kn-->
+
+    <!--  kr : http://domain.nida.or.kr/eng/structure.jsp-->
+    <sld domain="ac.kr"/>
+    <sld domain="co.kr"/>
+    <sld domain="go.kr"/>
+    <sld domain="ne.kr"/>
+    <sld domain="or.kr"/>
+    <sld domain="re.kr"/>
+    <sld domain="pe.kr"/>
+    <sld domain="한글.kr"/>
+
+    <!--  kw : http://en.wikipedia.org/wiki/.kw-->
+
+    <!--  ky : http://www.icta.ky/da_ky_reg_dom.php-->
+    <sld domain="edu.ky"/>
+    <sld domain="gov.ky"/>
+    <sld domain="com.ky"/>
+    <sld domain="org.ky"/>
+    <sld domain="net.ky"/>
+
+    <!--  kz : http://en.wikipedia.org/wiki/.kz-->
+    <sld domain="org.kz"/>
+    <sld domain="edu.kz"/>
+    <sld domain="net.kz"/>
+    <sld domain="gov.kz"/>
+    <sld domain="mil.kz"/>
+    <sld domain="com.kz"/>
+
+    <!--  la : http://en.wikipedia.org/wiki/.la-->
+
+    <!--  lb : http://en.wikipedia.org/wiki/.lb-->
+
+    <!--  lc : http://en.wikipedia.org/wiki/.lc-->
+    <sld domain="com.lc"/>
+    <sld domain="org.lc"/>
+    <sld domain="edu.lc"/>
+    <sld domain="gov.lc"/>
+
+    <!--  li : http://en.wikipedia.org/wiki/.li-->
+
+    <!--  lk : http://www.nic.lk/seclevpr.html-->
+    <sld domain="gov.lk"/>
+    <sld domain="sch.lk"/>
+    <sld domain="net.lk"/>
+    <sld domain="int.lk"/>
+    <sld domain="com.lk"/>
+    <sld domain="org.lk"/>
+    <sld domain="edu.lk"/>
+    <sld domain="ngo.lk"/>
+    <sld domain="soc.lk"/>
+    <sld domain="web.lk"/>
+    <sld domain="ltd.lk"/>
+    <sld domain="assn.lk"/>
+    <sld domain="grp.lk"/>
+    <sld domain="hotel.lk"/>
+
+    <!--  lr : http://psg.com/dns/lr/lr.txt-->
+
+    <!--  ls : http://en.wikipedia.org/wiki/.ls-->
+    <sld domain="co.ls"/>
+    <sld domain="org.ls"/>
+
+    <!--  lt : http://en.wikipedia.org/wiki/.lt-->
+
+    <!--  lu : http://www.dns.lu/en/-->
+
+    <!--  lv : http://www.nic.lv/DNS/En/generic.php-->
+    <sld domain="com.lv"/>
+    <sld domain="edu.lv"/>
+    <sld domain="gov.lv"/>
+    <sld domain="org.lv"/>
+    <sld domain="mil.lv"/>
+    <sld domain="id.lv"/>
+    <sld domain="net.lv"/>
+    <sld domain="asn.lv"/>
+    <sld domain="conf.lv"/>
+
+    <!--  ly : http://www.nic.ly/regulations.php-->
+    <sld domain="com.ly"/>
+    <sld domain="net.ly"/>
+    <sld domain="gov.ly"/>
+    <sld domain="plc.ly"/>
+    <sld domain="edu.ly"/>
+    <sld domain="sch.ly"/>
+    <sld domain="med.ly"/>
+    <sld domain="org.ly"/>
+    <sld domain="id.ly"/>
+
+    <!--  ma : http://en.wikipedia.org/wiki/.ma-->
+    <!--  list of 2nd level tlds ?-->
+    <sld domain="co.ma"/>
+    <sld domain="net.ma"/>
+    <sld domain="gov.ma"/>
+    <sld domain="org.ma"/>
+
+    <!--  mc : http://www.nic.mc/-->
+    <sld domain="tm.mc"/>
+    <sld domain="asso.mc"/>
+
+    <!--  md : http://en.wikipedia.org/wiki/.md-->
+
+    <!--  mg : http://www.nic.mg/tarif.htm-->
+    <sld domain="org.mg"/>
+    <sld domain="nom.mg"/>
+    <sld domain="gov.mg"/>
+    <sld domain="prd.mg"/>
+    <sld domain="tm.mg"/>
+    <sld domain="edu.mg"/>
+    <sld domain="mil.mg"/>
+    <sld domain="com.mg"/>
+
+    <!--  mh : http://en.wikipedia.org/wiki/.mh-->
+
+    <!--  mil : http://en.wikipedia.org/wiki/.mil-->
+
+    <!--  mk : http://en.wikipedia.org/wiki/.mk-->
+    <!--  list of 2nd level tlds ?-->
+    <sld domain="com.mk"/>
+    <sld domain="gov.mk"/>
+    <sld domain="org.mk"/>
+    <sld domain="net.mk"/>
+    <sld domain="edu.mk"/>
+
+    <!--  ml : http://www.gobin.info/domainname/ml-template.doc-->
+
+    <!--  mm : http://en.wikipedia.org/wiki/.mm-->
+
+    <!--  mn : http://en.wikipedia.org/wiki/.mn-->
+    <sld domain="gov.mn"/>
+    <sld domain="edu.mn"/>
+    <sld domain="org.mn"/>
+
+    <!--  mo : http://www.monic.net.mo/-->
+    <sld domain="com.mo"/>
+    <sld domain="net.mo"/>
+    <sld domain="org.mo"/>
+    <sld domain="edu.mo"/>
+    <sld domain="gov.mo"/>
+
+    <!--  mobi : http://en.wikipedia.org/wiki/.mobi-->
+
+    <!--  mp : http://www.dot.mp/-->
+
+    <!--  mq : http://en.wikipedia.org/wiki/.mq-->
+
+    <!--  mr : http://en.wikipedia.org/wiki/.mr-->
+
+    <!--  ms : http://en.wikipedia.org/wiki/.ms-->
+
+    <!--  mt : https://www.nic.org.mt/dotmt/-->
+
+    <!--  mu : http://en.wikipedia.org/wiki/.mu-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  museum : http://about.museum/naming/-->
+    <!--  there are 2nd-level TLD's, but there's no list-->
+
+    <!--  mv : http://en.wikipedia.org/wiki/.mv-->
+
+    <!--  mw : http://www.registrar.mw/-->
+    <sld domain="ac.mw"/>
+    <sld domain="biz.mw"/>
+    <sld domain="co.mw"/>
+    <sld domain="com.mw"/>
+    <sld domain="coop.mw"/>
+    <sld domain="edu.mw"/>
+    <sld domain="gov.mw"/>
+    <sld domain="int.mw"/>
+    <sld domain="net.mw"/>
+    <sld domain="org.mw"/>
+
+    <!--  mx : http://www.nic.mx/-->
+    <sld domain="com.mx"/>
+    <sld domain="edu.mx"/>
+    <sld domain="gob.mx"/>
+    <sld domain="net.mx"/>
+    <sld domain="org.mx"/>
+
+    <!--  my : http://www.mynic.net.my/-->
+
+    <!--  mz : http://www.gobin.info/domainname/mz-template.doc-->
+
+    <!--  na : http://www.na-nic.com.na/-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  name : has 2nd-level tlds, but there's no list of them-->
+
+    <!--  nc : http://www.cctld.nc/-->
+
+    <!--  ne : http://en.wikipedia.org/wiki/.ne-->
+
+    <!--  net : http://en.wikipedia.org/wiki/.net-->
+
+    <!--  nf : http://en.wikipedia.org/wiki/.nf-->
+    <sld domain="com.nf"/>
+    <sld domain="net.nf"/>
+    <sld domain="per.nf"/>
+    <sld domain="rec.nf"/>
+    <sld domain="web.nf"/>
+    <sld domain="arts.nf"/>
+    <sld domain="firm.nf"/>
+    <sld domain="info.nf"/>
+    <sld domain="other.nf"/>
+    <sld domain="store.nf"/>
+
+    <!--  ng : http://psg.com/dns/ng/-->
+
+    <!--  ni : http://www.nic.ni/dominios.htm-->
+
+    <!--  nl : http://www.domain-registry.nl/ace.php/c,728,122,,,,Home.html-->
+
+    <!--  no : http://www.norid.no/regelverk/index.en.html-->
+    <sld domain="fhs.no"/>
+    <sld domain="vgs.no"/>
+    <sld domain="fylkesbibl.no"/>
+    <sld domain="folkebibl.no"/>
+    <sld domain="museum.no"/>
+    <sld domain="idrett.no"/>
+    <sld domain="mil.no"/>
+    <sld domain="stat.no"/>
+    <sld domain="dep.no"/>
+    <sld domain="kommune.no"/>
+    <sld domain="herad.no"/>
+    <sld domain="priv.no"/>
+    <!--  no geographical names : http://www.norid.no/regelverk/vedlegg-b.en.html-->
+    <!--  counties-->
+    <sld domain="aa.no"/>
+    <sld domain="ah.no"/>
+    <sld domain="bu.no"/>
+    <sld domain="fm.no"/>
+    <sld domain="hl.no"/>
+    <sld domain="hm.no"/>
+    <sld domain="jan-mayen.no"/>
+    <sld domain="mr.no"/>
+    <sld domain="nl.no"/>
+    <sld domain="nt.no"/>
+    <sld domain="of.no"/>
+    <sld domain="ol.no"/>
+    <sld domain="oslo.no"/>
+    <sld domain="rl.no"/>
+    <sld domain="sf.no"/>
+    <sld domain="st.no"/>
+    <sld domain="svalbard.no"/>
+    <sld domain="tm.no"/>
+    <sld domain="tr.no"/>
+    <sld domain="va.no"/>
+    <sld domain="vf.no"/>
+    <!--  primary and lower secondary schools per county-->
+    <sld domain="gs.aa.no"/>
+    <sld domain="gs.ah.no"/>
+    <sld domain="gs.bu.no"/>
+    <sld domain="gs.fm.no"/>
+    <sld domain="gs.hl.no"/>
+    <sld domain="gs.hm.no"/>
+    <sld domain="gs.jan-mayen.no"/>
+    <sld domain="gs.mr.no"/>
+    <sld domain="gs.nl.no"/>
+    <sld domain="gs.nt.no"/>
+    <sld domain="gs.of.no"/>
+    <sld domain="gs.ol.no"/>
+    <sld domain="gs.oslo.no"/>
+    <sld domain="gs.rl.no"/>
+    <sld domain="gs.sf.no"/>
+    <sld domain="gs.st.no"/>
+    <sld domain="gs.svalbard.no"/>
+    <sld domain="gs.tm.no"/>
+    <sld domain="gs.tr.no"/>
+    <sld domain="gs.va.no"/>
+    <sld domain="gs.vf.no"/>
+    <!--  cities-->
+    <sld domain="akrehamn.no"/>
+    <sld domain="åkrehamn.no"/>
+    <sld domain="algard.no"/>
+    <sld domain="ålgård.no"/>
+    <sld domain="arna.no"/>
+    <sld domain="brumunddal.no"/>
+    <sld domain="bryne.no"/>
+    <sld domain="bronnoysund.no"/>
+    <sld domain="brønnøysund.no"/>
+    <sld domain="drobak.no"/>
+    <sld domain="drøbak.no"/>
+    <sld domain="egersund.no"/>
+    <sld domain="fetsund.no"/>
+    <sld domain="floro.no"/>
+    <sld domain="florø.no"/>
+    <sld domain="fredrikstad.no"/>
+    <sld domain="hokksund.no"/>
+    <sld domain="honefoss.no"/>
+    <sld domain="hønefoss.no"/>
+    <sld domain="jessheim.no"/>
+    <sld domain="jorpeland.no"/>
+    <sld domain="jørpeland.no"/>
+    <sld domain="kirkenes.no"/>
+    <sld domain="kopervik.no"/>
+    <sld domain="krokstadelva.no"/>
+    <sld domain="langevag.no"/>
+    <sld domain="langevåg.no"/>
+    <sld domain="leirvik.no"/>
+    <sld domain="mjondalen.no"/>
+    <sld domain="mjøndalen.no"/>
+    <sld domain="mo-i-rana.no"/>
+    <sld domain="mosjoen.no"/>
+    <sld domain="mosjøen.no"/>
+    <sld domain="nesoddtangen.no"/>
+    <sld domain="orkanger.no"/>
+    <sld domain="osoyro.no"/>
+    <sld domain="osøyro.no"/>
+    <sld domain="raholt.no"/>
+    <sld domain="råholt.no"/>
+    <sld domain="sandnessjoen.no"/>
+    <sld domain="sandnessjøen.no"/>
+    <sld domain="skedsmokorset.no"/>
+    <sld domain="slattum.no"/>
+    <sld domain="spjelkavik.no"/>
+    <sld domain="stathelle.no"/>
+    <sld domain="stavern.no"/>
+    <sld domain="stjordalshalsen.no"/>
+    <sld domain="stjørdalshalsen.no"/>
+    <sld domain="tananger.no"/>
+    <sld domain="tranby.no"/>
+    <sld domain="vossevangen.no"/>
+    <!--  communities-->
+    <sld domain="afjord.no"/>
+    <sld domain="åfjord.no"/>
+    <sld domain="agdenes.no"/>
+    <sld domain="al.no"/>
+    <sld domain="ål.no"/>
+    <sld domain="alesund.no"/>
+    <sld domain="ålesund.no"/>
+    <sld domain="alstahaug.no"/>
+    <sld domain="alta.no"/>
+    <sld domain="áltá.no"/>
+    <sld domain="alaheadju.no"/>
+    <sld domain="álaheadju.no"/>
+    <sld domain="alvdal.no"/>
+    <sld domain="amli.no"/>
+    <sld domain="åmli.no"/>
+    <sld domain="amot.no"/>
+    <sld domain="åmot.no"/>
+    <sld domain="andebu.no"/>
+    <sld domain="andoy.no"/>
+    <sld domain="andøy.no"/>
+    <sld domain="andasuolo.no"/>
+    <sld domain="ardal.no"/>
+    <sld domain="årdal.no"/>
+    <sld domain="aremark.no"/>
+    <sld domain="arendal.no"/>
+    <sld domain="ås.no"/>
+    <sld domain="aseral.no"/>
+    <sld domain="åseral.no"/>
+    <sld domain="asker.no"/>
+    <sld domain="askim.no"/>
+    <sld domain="askvoll.no"/>
+    <sld domain="askoy.no"/>
+    <sld domain="askøy.no"/>
+    <sld domain="asnes.no"/>
+    <sld domain="åsnes.no"/>
+    <sld domain="audnedaln.no"/>
+    <sld domain="aukra.no"/>
+    <sld domain="aure.no"/>
+    <sld domain="aurland.no"/>
+    <sld domain="aurskog-holand.no"/>
+    <sld domain="aurskog-høland.no"/>
+    <sld domain="austevoll.no"/>
+    <sld domain="austrheim.no"/>
+    <sld domain="averoy.no"/>
+    <sld domain="averøy.no"/>
+    <sld domain="balestrand.no"/>
+    <sld domain="ballangen.no"/>
+    <sld domain="balat.no"/>
+    <sld domain="bálát.no"/>
+    <sld domain="balsfjord.no"/>
+    <sld domain="bahccavuotna.no"/>
+    <sld domain="báhccavuotna.no"/>
+    <sld domain="bamble.no"/>
+    <sld domain="bardu.no"/>
+    <sld domain="beardu.no"/>
+    <sld domain="beiarn.no"/>
+    <sld domain="bajddar.no"/>
+    <sld domain="bájddar.no"/>
+    <sld domain="baidar.no"/>
+    <sld domain="báidár.no"/>
+    <sld domain="berg.no"/>
+    <sld domain="bergen.no"/>
+    <sld domain="berlevag.no"/>
+    <sld domain="berlevåg.no"/>
+    <sld domain="bearalvahki.no"/>
+    <sld domain="bearalváhki.no"/>
+    <sld domain="bindal.no"/>
+    <sld domain="birkenes.no"/>
+    <sld domain="bjarkoy.no"/>
+    <sld domain="bjarkøy.no"/>
+    <sld domain="bjerkreim.no"/>
+    <sld domain="bjugn.no"/>
+    <sld domain="bodo.no"/>
+    <sld domain="bodø.no"/>
+    <sld domain="badaddja.no"/>
+    <sld domain="bådåddjå.no"/>
+    <sld domain="budejju.no"/>
+    <sld domain="bokn.no"/>
+    <sld domain="bremanger.no"/>
+    <sld domain="bronnoy.no"/>
+    <sld domain="brønnøy.no"/>
+    <sld domain="bygland.no"/>
+    <sld domain="bykle.no"/>
+    <sld domain="barum.no"/>
+    <sld domain="bærum.no"/>
+    <sld domain="bo.telemark.no"/>
+    <sld domain="bø.telemark.no"/>
+    <sld domain="bo.nordland.no"/>
+    <sld domain="bø.nordland.no"/>
+    <sld domain="bievat.no"/>
+    <sld domain="bievát.no"/>
+    <sld domain="bomlo.no"/>
+    <sld domain="bømlo.no"/>
+    <sld domain="batsfjord.no"/>
+    <sld domain="båtsfjord.no"/>
+    <sld domain="bahcavuotna.no"/>
+    <sld domain="báhcavuotna.no"/>
+    <sld domain="dovre.no"/>
+    <sld domain="drammen.no"/>
+    <sld domain="drangedal.no"/>
+    <sld domain="dyroy.no"/>
+    <sld domain="dyrøy.no"/>
+    <sld domain="donna.no"/>
+    <sld domain="dønna.no"/>
+    <sld domain="eid.no"/>
+    <sld domain="eidfjord.no"/>
+    <sld domain="eidsberg.no"/>
+    <sld domain="eidskog.no"/>
+    <sld domain="eidsvoll.no"/>
+    <sld domain="eigersund.no"/>
+    <sld domain="elverum.no"/>
+    <sld domain="enebakk.no"/>
+    <sld domain="engerdal.no"/>
+    <sld domain="etne.no"/>
+    <sld domain="etnedal.no"/>
+    <sld domain="evenes.no"/>
+    <sld domain="evenassi.no"/>
+    <sld domain="evenášši.no"/>
+    <sld domain="evje-og-hornnes.no"/>
+    <sld domain="farsund.no"/>
+    <sld domain="fauske.no"/>
+    <sld domain="fuossko.no"/>
+    <sld domain="fuoisku.no"/>
+    <sld domain="fedje.no"/>
+    <sld domain="fet.no"/>
+    <sld domain="finnoy.no"/>
+    <sld domain="finnøy.no"/>
+    <sld domain="fitjar.no"/>
+    <sld domain="fjaler.no"/>
+    <sld domain="fjell.no"/>
+    <sld domain="flakstad.no"/>
+    <sld domain="flatanger.no"/>
+    <sld domain="flekkefjord.no"/>
+    <sld domain="flesberg.no"/>
+    <sld domain="flora.no"/>
+    <sld domain="fla.no"/>
+    <sld domain="flå.no"/>
+    <sld domain="folldal.no"/>
+    <sld domain="forsand.no"/>
+    <sld domain="fosnes.no"/>
+    <sld domain="fredrikstad.no"/>
+    <sld domain="frei.no"/>
+    <sld domain="frogn.no"/>
+    <sld domain="froland.no"/>
+    <sld domain="frosta.no"/>
+    <sld domain="frana.no"/>
+    <sld domain="fræna.no"/>
+    <sld domain="froya.no"/>
+    <sld domain="frøya.no"/>
+    <sld domain="fusa.no"/>
+    <sld domain="fyresdal.no"/>
+    <sld domain="forde.no"/>
+    <sld domain="førde.no"/>
+    <sld domain="gamvik.no"/>
+    <sld domain="gangaviika.no"/>
+    <sld domain="gaular.no"/>
+    <sld domain="gausdal.no"/>
+    <sld domain="gildeskal.no"/>
+    <sld domain="gildeskål.no"/>
+    <sld domain="giske.no"/>
+    <sld domain="gjemnes.no"/>
+    <sld domain="gjerdrum.no"/>
+    <sld domain="gjerstad.no"/>
+    <sld domain="gjesdal.no"/>
+    <sld domain="gjovik.no"/>
+    <sld domain="gjøvik.no"/>
+    <sld domain="gloppen.no"/>
+    <sld domain="gol.no"/>
+    <sld domain="gran.no"/>
+    <sld domain="grane.no"/>
+    <sld domain="granvin.no"/>
+    <sld domain="gratangen.no"/>
+    <sld domain="grimstad.no"/>
+    <sld domain="grong.no"/>
+    <sld domain="kraanghke.no"/>
+    <sld domain="kråanghke.no"/>
+    <sld domain="grue.no"/>
+    <sld domain="gulen.no"/>
+    <sld domain="hadsel.no"/>
+    <sld domain="halden.no"/>
+    <sld domain="halsa.no"/>
+    <sld domain="hamar.no"/>
+    <sld domain="hamaroy.no"/>
+    <sld domain="habmer.no"/>
+    <sld domain="hábmer.no"/>
+    <sld domain="hapmir.no"/>
+    <sld domain="hápmir.no"/>
+    <sld domain="hammerfest.no"/>
+    <sld domain="hammarfeasta.no"/>
+    <sld domain="hámmárfeasta.no"/>
+    <sld domain="haram.no"/>
+    <sld domain="hareid.no"/>
+    <sld domain="harstad.no"/>
+    <sld domain="hasvik.no"/>
+    <sld domain="aknoluokta.no"/>
+    <sld domain="ákŋoluokta.no"/>
+    <sld domain="hattfjelldal.no"/>
+    <sld domain="aarborte.no"/>
+    <sld domain="haugesund.no"/>
+    <sld domain="hemne.no"/>
+    <sld domain="hemnes.no"/>
+    <sld domain="hemsedal.no"/>
+    <sld domain="heroy.more-og-romsdal.no"/>
+    <sld domain="herøy.møre-og-romsdal.no"/>
+    <sld domain="heroy.nordland.no"/>
+    <sld domain="herøy.nordland.no"/>
+    <sld domain="hitra.no"/>
+    <sld domain="hjartdal.no"/>
+    <sld domain="hjelmeland.no"/>
+    <sld domain="hobol.no"/>
+    <sld domain="hobøl.no"/>
+    <sld domain="hof.no"/>
+    <sld domain="hol.no"/>
+    <sld domain="hole.no"/>
+    <sld domain="holmestrand.no"/>
+    <sld domain="holtalen.no"/>
+    <sld domain="holtålen.no"/>
+    <sld domain="hornindal.no"/>
+    <sld domain="horten.no"/>
+    <sld domain="hurdal.no"/>
+    <sld domain="hurum.no"/>
+    <sld domain="hvaler.no"/>
+    <sld domain="hyllestad.no"/>
+    <sld domain="hagebostad.no"/>
+    <sld domain="hægebostad.no"/>
+    <sld domain="hoyanger.no"/>
+    <sld domain="høyanger.no"/>
+    <sld domain="hoylandet.no"/>
+    <sld domain="høylandet.no"/>
+    <sld domain="ha.no"/>
+    <sld domain="hå.no"/>
+    <sld domain="ibestad.no"/>
+    <sld domain="inderoy.no"/>
+    <sld domain="inderøy.no"/>
+    <sld domain="iveland.no"/>
+    <sld domain="jevnaker.no"/>
+    <sld domain="jondal.no"/>
+    <sld domain="jolster.no"/>
+    <sld domain="jølster.no"/>
+    <sld domain="karasjok.no"/>
+    <sld domain="karasjohka.no"/>
+    <sld domain="kárášjohka.no"/>
+    <sld domain="karlsoy.no"/>
+    <sld domain="galsa.no"/>
+    <sld domain="gálsá.no"/>
+    <sld domain="karmoy.no"/>
+    <sld domain="karmøy.no"/>
+    <sld domain="kautokeino.no"/>
+    <sld domain="guovdageaidnu.no"/>
+    <sld domain="klepp.no"/>
+    <sld domain="klabu.no"/>
+    <sld domain="klæbu.no"/>
+    <sld domain="kongsberg.no"/>
+    <sld domain="kongsvinger.no"/>
+    <sld domain="kragero.no"/>
+    <sld domain="kragerø.no"/>
+    <sld domain="kristiansand.no"/>
+    <sld domain="kristiansund.no"/>
+    <sld domain="krodsherad.no"/>
+    <sld domain="krødsherad.no"/>
+    <sld domain="kvalsund.no"/>
+    <sld domain="rahkkeravju.no"/>
+    <sld domain="ráhkkerávju.no"/>
+    <sld domain="kvam.no"/>
+    <sld domain="kvinesdal.no"/>
+    <sld domain="kvinnherad.no"/>
+    <sld domain="kviteseid.no"/>
+    <sld domain="kvitsoy.no"/>
+    <sld domain="kvitsøy.no"/>
+    <sld domain="kvafjord.no"/>
+    <sld domain="kvæfjord.no"/>
+    <sld domain="giehtavuoatna.no"/>
+    <sld domain="kvanangen.no"/>
+    <sld domain="kvænangen.no"/>
+    <sld domain="navuotna.no"/>
+    <sld domain="návuotna.no"/>
+    <sld domain="kafjord.no"/>
+    <sld domain="kåfjord.no"/>
+    <sld domain="gaivuotna.no"/>
+    <sld domain="gáivuotna.no"/>
+    <sld domain="larvik.no"/>
+    <sld domain="lavangen.no"/>
+    <sld domain="lavagis.no"/>
+    <sld domain="loabat.no"/>
+    <sld domain="loabát.no"/>
+    <sld domain="lebesby.no"/>
+    <sld domain="davvesiida.no"/>
+    <sld domain="leikanger.no"/>
+    <sld domain="leirfjord.no"/>
+    <sld domain="leka.no"/>
+    <sld domain="leksvik.no"/>
+    <sld domain="lenvik.no"/>
+    <sld domain="leangaviika.no"/>
+    <sld domain="lea?gaviika.no"/>
+    <sld domain="lesja.no"/>
+    <sld domain="levanger.no"/>
+    <sld domain="lier.no"/>
+    <sld domain="lierne.no"/>
+    <sld domain="lillehammer.no"/>
+    <sld domain="lillesand.no"/>
+    <sld domain="lindesnes.no"/>
+    <sld domain="lindas.no"/>
+    <sld domain="lindås.no"/>
+    <sld domain="lom.no"/>
+    <sld domain="loppa.no"/>
+    <sld domain="lahppi.no"/>
+    <sld domain="láhppi.no"/>
+    <sld domain="lund.no"/>
+    <sld domain="lunner.no"/>
+    <sld domain="luroy.no"/>
+    <sld domain="lurøy.no"/>
+    <sld domain="luster.no"/>
+    <sld domain="lyngdal.no"/>
+    <sld domain="lyngen.no"/>
+    <sld domain="ivgu.no"/>
+    <sld domain="lardal.no"/>
+    <sld domain="lerdal.no"/>
+    <sld domain="lærdal.no"/>
+    <sld domain="lodingen.no"/>
+    <sld domain="lødingen.no"/>
+    <sld domain="lorenskog.no"/>
+    <sld domain="lørenskog.no"/>
+    <sld domain="loten.no"/>
+    <sld domain="løten.no"/>
+    <sld domain="malvik.no"/>
+    <sld domain="masoy.no"/>
+    <sld domain="måsøy.no"/>
+    <sld domain="muosat.no"/>
+    <sld domain="muosát.no"/>
+    <sld domain="mandal.no"/>
+    <sld domain="marker.no"/>
+    <sld domain="marnardal.no"/>
+    <sld domain="masfjorden.no"/>
+    <sld domain="meland.no"/>
+    <sld domain="meldal.no"/>
+    <sld domain="melhus.no"/>
+    <sld domain="meloy.no"/>
+    <sld domain="meløy.no"/>
+    <sld domain="meraker.no"/>
+    <sld domain="meråker.no"/>
+    <sld domain="moareke.no"/>
+    <sld domain="moåreke.no"/>
+    <sld domain="midsund.no"/>
+    <sld domain="midtre-gauldal.no"/>
+    <sld domain="modalen.no"/>
+    <sld domain="modum.no"/>
+    <sld domain="molde.no"/>
+    <sld domain="moskenes.no"/>
+    <sld domain="moss.no"/>
+    <sld domain="mosvik.no"/>
+    <sld domain="malselv.no"/>
+    <sld domain="målselv.no"/>
+    <sld domain="malatvuopmi.no"/>
+    <sld domain="málatvuopmi.no"/>
+    <sld domain="namdalseid.no"/>
+    <sld domain="aejrie.no"/>
+    <sld domain="namsos.no"/>
+    <sld domain="namsskogan.no"/>
+    <sld domain="naamesjevuemie.no"/>
+    <sld domain="nååmesjevuemie.no"/>
+    <sld domain="laakesvuemie.no"/>
+    <sld domain="nannestad.no"/>
+    <sld domain="narvik.no"/>
+    <sld domain="narviika.no"/>
+    <sld domain="naustdal.no"/>
+    <sld domain="nedre-eiker.no"/>
+    <sld domain="nes.akershus.no"/>
+    <sld domain="nes.buskerud.no"/>
+    <sld domain="nesna.no"/>
+    <sld domain="nesodden.no"/>
+    <sld domain="nesseby.no"/>
+    <sld domain="unjarga.no"/>
+    <sld domain="unjárga.no"/>
+    <sld domain="nesset.no"/>
+    <sld domain="nissedal.no"/>
+    <sld domain="nittedal.no"/>
+    <sld domain="nord-aurdal.no"/>
+    <sld domain="nord-fron.no"/>
+    <sld domain="nord-odal.no"/>
+    <sld domain="norddal.no"/>
+    <sld domain="nordkapp.no"/>
+    <sld domain="davvenjarga.no"/>
+    <sld domain="davvenjárga.no"/>
+    <sld domain="nordre-land.no"/>
+    <sld domain="nordreisa.no"/>
+    <sld domain="raisa.no"/>
+    <sld domain="ráisa.no"/>
+    <sld domain="nore-og-uvdal.no"/>
+    <sld domain="notodden.no"/>
+    <sld domain="naroy.no"/>
+    <sld domain="nærøy.no"/>
+    <sld domain="notteroy.no"/>
+    <sld domain="nøtterøy.no"/>
+    <sld domain="odda.no"/>
+    <sld domain="oksnes.no"/>
+    <sld domain="`øksnes.no"/>
+    <sld domain="oppdal.no"/>
+    <sld domain="oppegard.no"/>
+    <sld domain="oppegård.no"/>
+    <sld domain="orkdal.no"/>
+    <sld domain="orland.no"/>
+    <sld domain="ørland.no"/>
+    <sld domain="orskog.no"/>
+    <sld domain="ørskog.no"/>
+    <sld domain="orsta.no"/>
+    <sld domain="ørsta.no"/>
+    <sld domain="os.hedmark.no"/>
+    <sld domain="os.hordaland.no"/>
+    <sld domain="osen.no"/>
+    <sld domain="osteroy.no"/>
+    <sld domain="osterøy.no"/>
+    <sld domain="ostre-toten.no"/>
+    <sld domain="østre-toten.no"/>
+    <sld domain="overhalla.no"/>
+    <sld domain="ovre-eiker.no"/>
+    <sld domain="øvre-eiker.no"/>
+    <sld domain="oyer.no"/>
+    <sld domain="øyer.no"/>
+    <sld domain="oygarden.no"/>
+    <sld domain="øygarden.no"/>
+    <sld domain="oystre-slidre.no"/>
+    <sld domain="øystre-slidre.no"/>
+    <sld domain="porsanger.no"/>
+    <sld domain="porsangu.no"/>
+    <sld domain="porsáŋgu.no"/>
+    <sld domain="porsgrunn.no"/>
+    <sld domain="radoy.no"/>
+    <sld domain="radøy.no"/>
+    <sld domain="rakkestad.no"/>
+    <sld domain="rana.no"/>
+    <sld domain="ruovat.no"/>
+    <sld domain="randaberg.no"/>
+    <sld domain="rauma.no"/>
+    <sld domain="rendalen.no"/>
+    <sld domain="rennebu.no"/>
+    <sld domain="rennesoy.no"/>
+    <sld domain="rennesøy.no"/>
+    <sld domain="rindal.no"/>
+    <sld domain="ringebu.no"/>
+    <sld domain="ringerike.no"/>
+    <sld domain="ringsaker.no"/>
+    <sld domain="rissa.no"/>
+    <sld domain="risor.no"/>
+    <sld domain="risør.no"/>
+    <sld domain="roan.no"/>
+    <sld domain="rollag.no"/>
+    <sld domain="rygge.no"/>
+    <sld domain="ralingen.no"/>
+    <sld domain="rælingen.no"/>
+    <sld domain="rodoy.no"/>
+    <sld domain="rødøy.no"/>
+    <sld domain="romskog.no"/>
+    <sld domain="rømskog.no"/>
+    <sld domain="roros.no"/>
+    <sld domain="røros.no"/>
+    <sld domain="rost.no"/>
+    <sld domain="røst.no"/>
+    <sld domain="royken.no"/>
+    <sld domain="røyken.no"/>
+    <sld domain="royrvik.no"/>
+    <sld domain="røyrvik.no"/>
+    <sld domain="rade.no"/>
+    <sld domain="råde.no"/>
+    <sld domain="salangen.no"/>
+    <sld domain="siellak.no"/>
+    <sld domain="saltdal.no"/>
+    <sld domain="sálát.no"/>
+    <sld domain="sálat.no"/>
+    <sld domain="samnanger.no"/>
+    <sld domain="sande.more-og-romsdal.no"/>
+    <sld domain="sande.møre-og-romsdal.no"/>
+    <sld domain="sande.vestfold.no"/>
+    <sld domain="sandefjord.no"/>
+    <sld domain="sandnes.no"/>
+    <sld domain="sandoy.no"/>
+    <sld domain="sandøy.no"/>
+    <sld domain="sarpsborg.no"/>
+    <sld domain="sauda.no"/>
+    <sld domain="sauherad.no"/>
+    <sld domain="sel.no"/>
+    <sld domain="selbu.no"/>
+    <sld domain="selje.no"/>
+    <sld domain="seljord.no"/>
+    <sld domain="sigdal.no"/>
+    <sld domain="siljan.no"/>
+    <sld domain="sirdal.no"/>
+    <sld domain="skaun.no"/>
+    <sld domain="skedsmo.no"/>
+    <sld domain="ski.no"/>
+    <sld domain="skien.no"/>
+    <sld domain="skiptvet.no"/>
+    <sld domain="skjervoy.no"/>
+    <sld domain="skjervøy.no"/>
+    <sld domain="skierva.no"/>
+    <sld domain="skiervá.no"/>
+    <sld domain="skjak.no"/>
+    <sld domain="skjåk.no"/>
+    <sld domain="skodje.no"/>
+    <sld domain="skanland.no"/>
+    <sld domain="skånland.no"/>
+    <sld domain="skanit.no"/>
+    <sld domain="skánit.no"/>
+    <sld domain="smola.no"/>
+    <sld domain="smøla.no"/>
+    <sld domain="snillfjord.no"/>
+    <sld domain="snasa.no"/>
+    <sld domain="snåsa.no"/>
+    <sld domain="snoasa.no"/>
+    <sld domain="snaase.no"/>
+    <sld domain="snåase.no"/>
+    <sld domain="sogndal.no"/>
+    <sld domain="sokndal.no"/>
+    <sld domain="sola.no"/>
+    <sld domain="solund.no"/>
+    <sld domain="songdalen.no"/>
+    <sld domain="sortland.no"/>
+    <sld domain="spydeberg.no"/>
+    <sld domain="stange.no"/>
+    <sld domain="stavanger.no"/>
+    <sld domain="steigen.no"/>
+    <sld domain="steinkjer.no"/>
+    <sld domain="stjordal.no"/>
+    <sld domain="stjørdal.no"/>
+    <sld domain="stokke.no"/>
+    <sld domain="stor-elvdal.no"/>
+    <sld domain="stord.no"/>
+    <sld domain="stordal.no"/>
+    <sld domain="storfjord.no"/>
+    <sld domain="omasvuotna.no"/>
+    <sld domain="strand.no"/>
+    <sld domain="stranda.no"/>
+    <sld domain="stryn.no"/>
+    <sld domain="sula.no"/>
+    <sld domain="suldal.no"/>
+    <sld domain="sund.no"/>
+    <sld domain="sunndal.no"/>
+    <sld domain="surnadal.no"/>
+    <sld domain="sveio.no"/>
+    <sld domain="svelvik.no"/>
+    <sld domain="sykkylven.no"/>
+    <sld domain="sogne.no"/>
+    <sld domain="søgne.no"/>
+    <sld domain="somna.no"/>
+    <sld domain="sømna.no"/>
+    <sld domain="sondre-land.no"/>
+    <sld domain="søndre-land.no"/>
+    <sld domain="sor-aurdal.no"/>
+    <sld domain="sør-aurdal.no"/>
+    <sld domain="sor-fron.no"/>
+    <sld domain="sør-fron.no"/>
+    <sld domain="sor-odal.no"/>
+    <sld domain="sør-odal.no"/>
+    <sld domain="sor-varanger.no"/>
+    <sld domain="sør-varanger.no"/>
+    <sld domain="matta-varjjat.no"/>
+    <sld domain="mátta-várjjat.no"/>
+    <sld domain="sorfold.no"/>
+    <sld domain="sørfold.no"/>
+    <sld domain="sorreisa.no"/>
+    <sld domain="sørreisa.no"/>
+    <sld domain="sorum.no"/>
+    <sld domain="sørum.no"/>
+    <sld domain="tana.no"/>
+    <sld domain="deatnu.no"/>
+    <sld domain="time.no"/>
+    <sld domain="tingvoll.no"/>
+    <sld domain="tinn.no"/>
+    <sld domain="tjeldsund.no"/>
+    <sld domain="dielddanuorri.no"/>
+    <sld domain="tjome.no"/>
+    <sld domain="tjøme.no"/>
+    <sld domain="tokke.no"/>
+    <sld domain="tolga.no"/>
+    <sld domain="torsken.no"/>
+    <sld domain="tranoy.no"/>
+    <sld domain="tranøy.no"/>
+    <sld domain="tromso.no"/>
+    <sld domain="tromsø.no"/>
+    <sld domain="tromsa.no"/>
+    <sld domain="romsa.no"/>
+    <sld domain="trondheim.no"/>
+    <sld domain="troandin.no"/>
+    <sld domain="trysil.no"/>
+    <sld domain="trana.no"/>
+    <sld domain="træna.no"/>
+    <sld domain="trogstad.no"/>
+    <sld domain="trøgstad.no"/>
+    <sld domain="tvedestrand.no"/>
+    <sld domain="tydal.no"/>
+    <sld domain="tynset.no"/>
+    <sld domain="tysfjord.no"/>
+    <sld domain="divtasvuodna.no"/>
+    <sld domain="divttasvuotna.no"/>
+    <sld domain="tysnes.no"/>
+    <sld domain="tysvar.no"/>
+    <sld domain="tysvær.no"/>
+    <sld domain="tonsberg.no"/>
+    <sld domain="tønsberg.no"/>
+    <sld domain="ullensaker.no"/>
+    <sld domain="ullensvang.no"/>
+    <sld domain="ulvik.no"/>
+    <sld domain="utsira.no"/>
+    <sld domain="vadso.no"/>
+    <sld domain="vadsø.no"/>
+    <sld domain="cahcesuolo.no"/>
+    <sld domain="cáhcesuolo.no"/>
+    <sld domain="vaksdal.no"/>
+    <sld domain="valle.no"/>
+    <sld domain="vang.no"/>
+    <sld domain="vanylven.no"/>
+    <sld domain="vardo.no"/>
+    <sld domain="vardø.no"/>
+    <sld domain="varggat.no"/>
+    <sld domain="várggát.no"/>
+    <sld domain="vefsn.no"/>
+    <sld domain="vaapste.no"/>
+    <sld domain="vega.no"/>
+    <sld domain="vegarshei.no"/>
+    <sld domain="vegårshei.no"/>
+    <sld domain="vennesla.no"/>
+    <sld domain="verdal.no"/>
+    <sld domain="verran.no"/>
+    <sld domain="vestby.no"/>
+    <sld domain="vestnes.no"/>
+    <sld domain="vestre-slidre.no"/>
+    <sld domain="vestre-toten.no"/>
+    <sld domain="vestvagoy.no"/>
+    <sld domain="vestvågøy.no"/>
+    <sld domain="vevelstad.no"/>
+    <sld domain="vik.no"/>
+    <sld domain="vikna.no"/>
+    <sld domain="vindafjord.no"/>
+    <sld domain="volda.no"/>
+    <sld domain="voss.no"/>
+    <sld domain="varoy.no"/>
+    <sld domain="værøy.no"/>
+    <sld domain="vagan.no"/>
+    <sld domain="vågan.no"/>
+    <sld domain="voagat.no"/>
+    <sld domain="vagsoy.no"/>
+    <sld domain="vågsøy.no"/>
+    <sld domain="vaga.no"/>
+    <sld domain="vågå.no"/>
+    <sld domain="valer.ostfold.no"/>
+    <sld domain="våler.østfold.no"/>
+    <sld domain="valer.hedmark.no"/>
+    <sld domain="våler.hedmark.no"/>
+
+    <!--  np : http://www.mos.com.np/register.html-->
+
+    <!--  nr : http://cenpac.net.nr/dns/index.html-->
+    <sld domain="biz.nr"/>
+    <sld domain="info.nr"/>
+    <sld domain="gov.nr"/>
+    <sld domain="edu.nr"/>
+    <sld domain="org.nr"/>
+    <sld domain="net.nr"/>
+    <sld domain="com.nr"/>
+
+    <!--  nu : http://en.wikipedia.org/wiki/.nu-->
+
+    <!--  nz : http://en.wikipedia.org/wiki/.nz-->
+    <sld domain="ac.nz"/>
+    <sld domain="co.nz"/>
+    <sld domain="cri.nz"/>
+    <sld domain="geek.nz"/>
+    <sld domain="gen.nz"/>
+    <sld domain="govt.nz"/>
+    <sld domain="iwi.nz"/>
+    <sld domain="maori.nz"/>
+    <sld domain="mil.nz"/>
+    <sld domain="net.nz"/>
+    <sld domain="org.nz"/>
+    <sld domain="parliament.nz"/>
+    <sld domain="school.nz"/>
+
+    <!--  om : http://en.wikipedia.org/wiki/.om-->
+
+    <!--  org : http://en.wikipedia.org/wiki/.og-->
+
+    <!--  pa : http://www.nic.pa/-->
+
+    <!--  pe : http://www.nic.pe/normas-proced-i.htm-->
+
+    <!--  pf : http://www.gobin.info/domainname/formulaire-pf.pdf-->
+    <sld domain="com.pf"/>
+    <sld domain="org.pf"/>
+    <sld domain="edu.pf"/>
+
+    <!--  pg : http://en.wikipedia.org/wiki/.pg-->
+
+    <!--  ph : http://www.domains.ph/FAQ2.asp-->
+    <!--  list of 2nd level tlds ?-->
+    <sld domain="com.ph"/>
+    <sld domain="net.ph"/>
+    <sld domain="org.ph"/>
+    <sld domain="gov.ph"/>
+    <sld domain="edu.ph"/>
+    <sld domain="ngo.ph"/>
+    <sld domain="mil.ph"/>
+
+    <!--  pk : http://pk5.pknic.net.pk/pk5/msgNamepk.PK-->
+    <sld domain="com.pk"/>
+    <sld domain="net.pk"/>
+    <sld domain="edu.pk"/>
+    <sld domain="org.pk"/>
+    <sld domain="fam.pk"/>
+    <sld domain="biz.pk"/>
+    <sld domain="web.pk"/>
+    <sld domain="gov.pk"/>
+    <sld domain="gob.pk"/>
+    <sld domain="gok.pk"/>
+    <sld domain="gon.pk"/>
+    <sld domain="gop.pk"/>
+    <sld domain="gos.pk"/>
+    <sld domain="goa.pk"/>
+    <sld domain="info.pk"/>
+
+    <!--  pl : http://www.dns.pl/english/-->
+    <!--  NASK functional domains (nask.pl / dns.pl) : http://www.dns.pl/english/dns-funk.html-->
+    <sld domain="aid.pl"/>
+    <sld domain="agro.pl"/>
+    <sld domain="atm.pl"/>
+    <sld domain="auto.pl"/>
+    <sld domain="biz.pl"/>
+    <sld domain="com.pl"/>
+    <sld domain="edu.pl"/>
+    <sld domain="gmina.pl"/>
+    <sld domain="gsm.pl"/>
+    <sld domain="info.pl"/>
+    <sld domain="mail.pl"/>
+    <sld domain="miasta.pl"/>
+    <sld domain="media.pl"/>
+    <sld domain="mil.pl"/>
+    <sld domain="net.pl"/>
+    <sld domain="nieruchomosci.pl"/>
+    <sld domain="nom.pl"/>
+    <sld domain="org.pl"/>
+    <sld domain="pc.pl"/>
+    <sld domain="powiat.pl"/>
+    <sld domain="priv.pl"/>
+    <sld domain="realestate.pl"/>
+    <sld domain="rel.pl"/>
+    <sld domain="sex.pl"/>
+    <sld domain="shop.pl"/>
+    <sld domain="sklep.pl"/>
+    <sld domain="sos.pl"/>
+    <sld domain="szkola.pl"/>
+    <sld domain="targi.pl"/>
+    <sld domain="tm.pl"/>
+    <sld domain="tourism.pl"/>
+    <sld domain="travel.pl"/>
+    <sld domain="turystyka.pl"/>
+    <!--  ICM functional domains (icm.edu.pl)-->
+    <sld domain="6bone.pl"/>
+    <sld domain="art.pl"/>
+    <sld domain="mbone.pl"/>
+    <!--  Government domains (administred by ippt.gov.pl)-->
+    <sld domain="gov.pl"/>
+    <sld domain="uw.gov.pl"/>
+    <sld domain="um.gov.pl"/>
+    <sld domain="ug.gov.pl"/>
+    <sld domain="upow.gov.pl"/>
+    <sld domain="starostwo.gov.pl"/>
+    <sld domain="so.gov.pl"/>
+    <sld domain="sr.gov.pl"/>
+    <sld domain="po.gov.pl"/>
+    <sld domain="pa.gov.pl"/>
+    <!--  other functional domains-->
+    <sld domain="med.pl"/>
+    <sld domain="ngo.pl"/>
+    <sld domain="irc.pl"/>
+    <sld domain="usenet.pl"/>
+    <!--  NASK geographical domains : http://www.dns.pl/english/dns-regiony.html-->
+    <sld domain="augustow.pl"/>
+    <sld domain="babia-gora.pl"/>
+    <sld domain="bedzin.pl"/>
+    <sld domain="beskidy.pl"/>
+    <sld domain="bialowieza.pl"/>
+    <sld domain="bialystok.pl"/>
+    <sld domain="bielawa.pl"/>
+    <sld domain="bieszczady.pl"/>
+    <sld domain="boleslawiec.pl"/>
+    <sld domain="bydgoszcz.pl"/>
+    <sld domain="bytom.pl"/>
+    <sld domain="cieszyn.pl"/>
+    <sld domain="czeladz.pl"/>
+    <sld domain="czest.pl"/>
+    <sld domain="dlugoleka.pl"/>
+    <sld domain="elblag.pl"/>
+    <sld domain="elk.pl"/>
+    <sld domain="glogow.pl"/>
+    <sld domain="gniezno.pl"/>
+    <sld domain="gorlice.pl"/>
+    <sld domain="grajewo.pl"/>
+    <sld domain="ilawa.pl"/>
+    <sld domain="jaworzno.pl"/>
+    <sld domain="jelenia-gora.pl"/>
+    <sld domain="jgora.pl"/>
+    <sld domain="kalisz.pl"/>
+    <sld domain="kazimierz-dolny.pl"/>
+    <sld domain="karpacz.pl"/>
+    <sld domain="kartuzy.pl"/>
+    <sld domain="kaszuby.pl"/>
+    <sld domain="katowice.pl"/>
+    <sld domain="kepno.pl"/>
+    <sld domain="ketrzyn.pl"/>
+    <sld domain="klodzko.pl"/>
+    <sld domain="kobierzyce.pl"/>
+    <sld domain="kolobrzeg.pl"/>
+    <sld domain="konin.pl"/>
+    <sld domain="konskowola.pl"/>
+    <sld domain="kutno.pl"/>
+    <sld domain="lapy.pl"/>
+    <sld domain="lebork.pl"/>
+    <sld domain="legnica.pl"/>
+    <sld domain="lezajsk.pl"/>
+    <sld domain="limanowa.pl"/>
+    <sld domain="lomza.pl"/>
+    <sld domain="lowicz.pl"/>
+    <sld domain="lubin.pl"/>
+    <sld domain="lukow.pl"/>
+    <sld domain="malbork.pl"/>
+    <sld domain="malopolska.pl"/>
+    <sld domain="mazowsze.pl"/>
+    <sld domain="mazury.pl"/>
+    <sld domain="mielec.pl"/>
+    <sld domain="mielno.pl"/>
+    <sld domain="mragowo.pl"/>
+    <sld domain="naklo.pl"/>
+    <sld domain="nowaruda.pl"/>
+    <sld domain="nysa.pl"/>
+    <sld domain="olawa.pl"/>
+    <sld domain="olecko.pl"/>
+    <sld domain="olkusz.pl"/>
+    <sld domain="olsztyn.pl"/>
+    <sld domain="opoczno.pl"/>
+    <sld domain="opole.pl"/>
+    <sld domain="ostroda.pl"/>
+    <sld domain="ostroleka.pl"/>
+    <sld domain="ostrowiec.pl"/>
+    <sld domain="ostrowwlkp.pl"/>
+    <sld domain="pila.pl"/>
+    <sld domain="pisz.pl"/>
+    <sld domain="podhale.pl"/>
+    <sld domain="podlasie.pl"/>
+    <sld domain="polkowice.pl"/>
+    <sld domain="pomorze.pl"/>
+    <sld domain="pomorskie.pl"/>
+    <sld domain="prochowice.pl"/>
+    <sld domain="pruszkow.pl"/>
+    <sld domain="przeworsk.pl"/>
+    <sld domain="pulawy.pl"/>
+    <sld domain="radom.pl"/>
+    <sld domain="rawa-maz.pl"/>
+    <sld domain="rybnik.pl"/>
+    <sld domain="rzeszow.pl"/>
+    <sld domain="sanok.pl"/>
+    <sld domain="sejny.pl"/>
+    <sld domain="slask.pl"/>
+    <sld domain="slupsk.pl"/>
+    <sld domain="sosnowiec.pl"/>
+    <sld domain="stalowa-wola.pl"/>
+    <sld domain="skoczow.pl"/>
+    <sld domain="starachowice.pl"/>
+    <sld domain="stargard.pl"/>
+    <sld domain="suwalki.pl"/>
+    <sld domain="swidnica.pl"/>
+    <sld domain="swiebodzin.pl"/>
+    <sld domain="swinoujscie.pl"/>
+    <sld domain="szczecin.pl"/>
+    <sld domain="szczytno.pl"/>
+    <sld domain="tarnobrzeg.pl"/>
+    <sld domain="tgory.pl"/>
+    <sld domain="turek.pl"/>
+    <sld domain="tychy.pl"/>
+    <sld domain="ustka.pl"/>
+    <sld domain="walbrzych.pl"/>
+    <sld domain="warmia.pl"/>
+    <sld domain="warszawa.pl"/>
+    <sld domain="waw.pl"/>
+    <sld domain="wegrow.pl"/>
+    <sld domain="wielun.pl"/>
+    <sld domain="wlocl.pl"/>
+    <sld domain="wloclawek.pl"/>
+    <sld domain="wodzislaw.pl"/>
+    <sld domain="wolomin.pl"/>
+    <sld domain="wroclaw.pl"/>
+    <sld domain="zachpomor.pl"/>
+    <sld domain="zagan.pl"/>
+    <sld domain="zarow.pl"/>
+    <sld domain="zgora.pl"/>
+    <sld domain="zgorzelec.pl"/>
+    <!--  TASK geographical domains (www.task.gda.pl/uslugi/dns)-->
+    <sld domain="gda.pl"/>
+    <sld domain="gdansk.pl"/>
+    <sld domain="gdynia.pl"/>
+    <sld domain="sopot.pl"/>
+    <!--  other geographical domains-->
+    <sld domain="gliwice.pl"/>
+    <sld domain="krakow.pl"/>
+    <sld domain="poznan.pl"/>
+    <sld domain="wroc.pl"/>
+    <sld domain="zakopane.pl"/>
+
+    <!--  pn : http://www.government.pn/PnRegistry/policies.htm-->
+    <sld domain="gov.pn"/>
+    <sld domain="co.pn"/>
+    <sld domain="org.pn"/>
+    <sld domain="edu.pn"/>
+    <sld domain="net.pn"/>
+
+    <!--  pr : http://www.nic.pr/index.asp?f=1-->
+    <sld domain="com.pr"/>
+    <sld domain="net.pr"/>
+    <sld domain="org.pr"/>
+    <sld domain="gov.pr"/>
+    <sld domain="edu.pr"/>
+    <sld domain="isla.pr"/>
+    <sld domain="pro.pr"/>
+    <sld domain="biz.pr"/>
+    <sld domain="info.pr"/>
+    <sld domain="name.pr"/>
+    <!--  these aren't mentioned on nic.pr, but on http://en.wikipedia.org/wiki/.pr-->
+    <sld domain="est.pr"/>
+    <sld domain="prof.pr"/>
+    <sld domain="ac.pr"/>
+
+    <!--  pro : http://www.nic.pro/support_faq.htm-->
+    <sld domain="aca.pro"/>
+    <sld domain="bar.pro"/>
+    <sld domain="cpa.pro"/>
+    <sld domain="jur.pro"/>
+    <sld domain="law.pro"/>
+    <sld domain="med.pro"/>
+    <sld domain="eng.pro"/>
+
+    <!--  ps : http://en.wikipedia.org/wiki/.ps-->
+    <!--  list of 2nd level tlds ?-->
+    <sld domain="edu.ps"/>
+    <sld domain="gov.ps"/>
+    <sld domain="sec.ps"/>
+    <sld domain="plo.ps"/>
+    <sld domain="com.ps"/>
+    <sld domain="org.ps"/>
+    <sld domain="net.ps"/>
+
+    <!--  pt : http://online.dns.pt/dns/start_dns-->
+    <sld domain="net.pt"/>
+    <sld domain="gov.pt"/>
+    <sld domain="org.pt"/>
+    <sld domain="edu.pt"/>
+    <sld domain="int.pt"/>
+    <sld domain="publ.pt"/>
+    <sld domain="com.pt"/>
+    <sld domain="nome.pt"/>
+
+    <!--  pw : http://en.wikipedia.org/wiki/.pw-->
+
+    <!--  py : http://www.nic.py/faq_a.html#faq_b-->
+
+    <!--  qa : http://www.qatar.net.qa/services/virtual.htm-->
+
+    <!--  re : http://www.afnic.re/obtenir/chartes/nommage-re/annexe-descriptifs-->
+    <sld domain="com.re"/>
+    <sld domain="asso.re"/>
+    <sld domain="nom.re"/>
+
+    <!--  ro : http://www.rotld.ro/-->
+    <sld domain="com.ro"/>
+    <sld domain="org.ro"/>
+    <sld domain="tm.ro"/>
+    <sld domain="nt.ro"/>
+    <sld domain="nom.ro"/>
+    <sld domain="info.ro"/>
+    <sld domain="rec.ro"/>
+    <sld domain="arts.ro"/>
+    <sld domain="firm.ro"/>
+    <sld domain="store.ro"/>
+    <sld domain="www.ro"/>
+
+    <!--  ru : http://en.wikipedia.org/wiki/.ru-->
+    <sld domain="com.ru"/>
+    <sld domain="net.ru"/>
+    <sld domain="org.ru"/>
+    <sld domain="pp.ru"/>
+    <sld domain="int.ru"/>
+    <!--  there should be geo-names like msk.ru, but I didn't find a list-->
+
+    <!--  rw : http://www.nic.rw/cgi-bin/policy.pl-->
+    <sld domain="gov.rw"/>
+    <sld domain="net.rw"/>
+    <sld domain="edu.rw"/>
+    <sld domain="ac.rw"/>
+    <sld domain="com.rw"/>
+    <sld domain="co.rw"/>
+    <sld domain="int.rw"/>
+    <sld domain="mil.rw"/>
+    <sld domain="gouv.rw"/>
+
+    <!--  sa : http://www.saudinic.net.sa/page.php?page=1&lang=1-->
+
+    <!--  sb : http://www.sbnic.net.sb/-->
+
+    <!--  sc : http://www.nic.sc/-->
+    <sld domain="com.sc"/>
+    <sld domain="gov.sc"/>
+    <sld domain="net.sc"/>
+    <sld domain="org.sc"/>
+    <sld domain="edu.sc"/>
+
+    <!--  sd : http://www.isoc.sd/sudanic.isoc.sd/billing_pricing.htm-->
+    <sld domain="com.sd"/>
+    <sld domain="net.sd"/>
+    <sld domain="org.sd"/>
+    <sld domain="edu.sd"/>
+    <sld domain="med.sd"/>
+    <sld domain="tv.sd"/>
+    <sld domain="gov.sd"/>
+    <sld domain="info.sd"/>
+
+    <!--  se : http://en.wikipedia.org/wiki/.se-->
+    <sld domain="org.se"/>
+    <sld domain="pp.se"/>
+    <sld domain="tm.se"/>
+    <sld domain="parti.se"/>
+    <sld domain="press.se"/>
+    <sld domain="mil.se"/>
+    <!--  se geographical names-->
+    <sld domain="ab.se"/>
+    <sld domain="c.se"/>
+    <sld domain="d.se"/>
+    <sld domain="e.se"/>
+    <sld domain="f.se"/>
+    <sld domain="g.se"/>
+    <sld domain="h.se"/>
+    <sld domain="i.se"/>
+    <sld domain="k.se"/>
+    <sld domain="m.se"/>
+    <sld domain="n.se"/>
+    <sld domain="o.se"/>
+    <sld domain="s.se"/>
+    <sld domain="t.se"/>
+    <sld domain="u.se"/>
+    <sld domain="w.se"/>
+    <sld domain="x.se"/>
+    <sld domain="y.se"/>
+    <sld domain="z.se"/>
+    <sld domain="ac.se"/>
+    <sld domain="bd.se"/>
+
+    <!--  sg : http://www.nic.net.sg/sub_policies_agreement/2ld.html-->
+    <sld domain="com.sg"/>
+    <sld domain="net.sg"/>
+    <sld domain="org.sg"/>
+    <sld domain="gov.sg"/>
+    <sld domain="edu.sg"/>
+    <sld domain="per.sg"/>
+
+    <!--  sh : http://www.nic.sh/rules.html-->
+    <!--  list of 2nd level domains ?-->
+
+    <!--  si : http://en.wikipedia.org/wiki/.si-->
+
+    <!--  sk : http://en.wikipedia.org/wiki/.sk-->
+
+    <!--  sl : http://en.wikipedia.org/wiki/.sl-->
+    <!--  list of 2nd level domains ?-->
+
+    <!--  sm : http://en.wikipedia.org/wiki/.sm-->
+
+    <!--  sn : http://en.wikipedia.org/wiki/.sn-->
+    <!--  list of 2nd level domains ?-->
+
+    <!--  sr : http://en.wikipedia.org/wiki/.sr-->
+
+    <!--  st : http://www.nic.st/html/policyrules/-->
+
+    <!--  su : http://en.wikipedia.org/wiki/.su-->
+
+    <!--  sv : http://www.svnet.org.sv/svpolicy.html-->
+
+    <!--  sy : http://www.gobin.info/domainname/sy.doc-->
+
+    <!--  sz : http://en.wikipedia.org/wiki/.sz-->
+    <!--  list of 2nd level domains ?-->
+
+    <!--  tc : http://en.wikipedia.org/wiki/.tc-->
+
+    <!--  td : http://en.wikipedia.org/wiki/.td-->
+
+    <!--  tf : http://en.wikipedia.org/wiki/.tf-->
+
+    <!--  tg : http://en.wikipedia.org/wiki/.tg-->
+    <!--  list of 2nd level domains ?-->
+
+    <!--  th : http://en.wikipedia.org/wiki/.th-->
+
+    <!--  tj : http://www.nic.tj/policy.htm-->
+    <sld domain="ac.tj"/>
+    <sld domain="biz.tj"/>
+    <sld domain="com.tj"/>
+    <sld domain="co.tj"/>
+    <sld domain="edu.tj"/>
+    <sld domain="int.tj"/>
+    <sld domain="name.tj"/>
+    <sld domain="net.tj"/>
+    <sld domain="org.tj"/>
+    <sld domain="web.tj"/>
+    <sld domain="gov.tj"/>
+    <sld domain="go.tj"/>
+    <sld domain="mil.tj"/>
+
+    <!--  tk : http://en.wikipedia.org/wiki/.tk-->
+
+    <!--  tl : http://en.wikipedia.org/wiki/.tl-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  tm : http://www.nic.tm/rules.html-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  tn : http://en.wikipedia.org/wiki/.tn-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  to : http://en.wikipedia.org/wiki/.to-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  tr : http://en.wikipedia.org/wiki/.tr-->
+
+    <!--  travel : http://en.wikipedia.org/wiki/.travel-->
+
+    <!--  tt : http://www.nic.tt/-->
+    <sld domain="co.tt"/>
+    <sld domain="com.tt"/>
+    <sld domain="org.tt"/>
+    <sld domain="net.tt"/>
+    <sld domain="biz.tt"/>
+    <sld domain="info.tt"/>
+    <sld domain="pro.tt"/>
+    <sld domain="int.tt"/>
+    <sld domain="coop.tt"/>
+    <sld domain="jobs.tt"/>
+    <sld domain="mobi.tt"/>
+    <sld domain="travel.tt"/>
+    <sld domain="museum.tt"/>
+    <sld domain="aero.tt"/>
+    <sld domain="name.tt"/>
+    <sld domain="gov.tt"/>
+    <sld domain="edu.tt"/>
+
+    <!--  tv : http://en.wikipedia.org/wiki/.tv-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  tw : http://en.wikipedia.org/wiki/.tw-->
+    <sld domain="edu.tw"/>
+    <sld domain="gov.tw"/>
+    <sld domain="mil.tw"/>
+    <sld domain="com.tw"/>
+    <sld domain="net.tw"/>
+    <sld domain="org.tw"/>
+    <sld domain="idv.tw"/>
+    <sld domain="game.tw"/>
+    <sld domain="ebiz.tw"/>
+    <sld domain="club.tw"/>
+    <sld domain="網路.tw"/>
+    <sld domain="組織.tw"/>
+    <sld domain="商業.tw"/>
+
+    <!--  tz : http://en.wikipedia.org/wiki/.tz-->
+
+    <!--  ua : http://www.nic.net.ua/-->
+    <sld domain="com.ua"/>
+    <sld domain="edu.ua"/>
+    <sld domain="gov.ua"/>
+    <sld domain="net.ua"/>
+    <sld domain="org.ua"/>
+    <!--  ua geo-names-->
+    <sld domain="cherkassy.ua"/>
+    <sld domain="chernigov.ua"/>
+    <sld domain="chernovtsy.ua"/>
+    <sld domain="ck.ua"/>
+    <sld domain="cn.ua"/>
+    <sld domain="crimea.ua"/>
+    <sld domain="cv.ua"/>
+    <sld domain="dn.ua"/>
+    <sld domain="dnepropetrovsk.ua"/>
+    <sld domain="donetsk.ua"/>
+    <sld domain="dp.ua"/>
+    <sld domain="if.ua"/>
+    <sld domain="ivano-frankivsk.ua"/>
+    <sld domain="kh.ua"/>
+    <sld domain="kharkov.ua"/>
+    <sld domain="kherson.ua"/>
+    <sld domain="kiev.ua"/>
+    <sld domain="kirovograd.ua"/>
+    <sld domain="km.ua"/>
+    <sld domain="kr.ua"/>
+    <sld domain="ks.ua"/>
+    <sld domain="lg.ua"/>
+    <sld domain="lugansk.ua"/>
+    <sld domain="lutsk.ua"/>
+    <sld domain="lviv.ua"/>
+    <sld domain="mk.ua"/>
+    <sld domain="nikolaev.ua"/>
+    <sld domain="od.ua"/>
+    <sld domain="odessa.ua"/>
+    <sld domain="pl.ua"/>
+    <sld domain="poltava.ua"/>
+    <sld domain="rovno.ua"/>
+    <sld domain="rv.ua"/>
+    <sld domain="sebastopol.ua"/>
+    <sld domain="sumy.ua"/>
+    <sld domain="te.ua"/>
+    <sld domain="ternopil.ua"/>
+    <sld domain="vinnica.ua"/>
+    <sld domain="vn.ua"/>
+    <sld domain="zaporizhzhe.ua"/>
+    <sld domain="zp.ua"/>
+    <sld domain="uz.ua"/>
+    <sld domain="uzhgorod.ua"/>
+    <sld domain="zhitomir.ua"/>
+    <sld domain="zt.ua"/>
+
+    <!--  ug : http://www.registry.co.ug/-->
+    <sld domain="co.ug"/>
+    <sld domain="ac.ug"/>
+    <sld domain="sc.ug"/>
+    <sld domain="go.ug"/>
+    <sld domain="ne.ug"/>
+    <sld domain="or.ug"/>
+
+    <!--  uk : http://en.wikipedia.org/wiki/.uk-->
+    <sld domain="sch.uk"/>
+    <sld domain="bl.uk"/>
+    <sld domain="british-library.uk"/>
+    <sld domain="icnet.uk"/>
+    <sld domain="jet.uk"/>
+    <sld domain="nel.uk"/>
+    <sld domain="nls.uk"/>
+    <sld domain="national-library-scotland.uk"/>
+    <sld domain="parliament.uk"/>
+
+    <!--  us : http://en.wikipedia.org/wiki/.us-->
+    <sld domain="dni.us"/>
+    <sld domain="fed.us"/>
+    <sld domain="isa.us"/>
+    <sld domain="kids.us"/>
+    <sld domain="nsn.us"/>
+    <!--  us geographic names-->
+    <sld domain="ak.us"/>
+    <sld domain="al.us"/>
+    <sld domain="ar.us"/>
+    <sld domain="az.us"/>
+    <sld domain="ca.us"/>
+    <sld domain="co.us"/>
+    <sld domain="ct.us"/>
+    <sld domain="dc.us"/>
+    <sld domain="de.us"/>
+    <sld domain="fl.us"/>
+    <sld domain="ga.us"/>
+    <sld domain="hi.us"/>
+    <sld domain="ia.us"/>
+    <sld domain="id.us"/>
+    <sld domain="il.us"/>
+    <sld domain="in.us"/>
+    <sld domain="ks.us"/>
+    <sld domain="ky.us"/>
+    <sld domain="la.us"/>
+    <sld domain="ma.us"/>
+    <sld domain="md.us"/>
+    <sld domain="me.us"/>
+    <sld domain="mi.us"/>
+    <sld domain="mn.us"/>
+    <sld domain="mo.us"/>
+    <sld domain="ms.us"/>
+    <sld domain="mt.us"/>
+    <sld domain="nc.us"/>
+    <sld domain="nd.us"/>
+    <sld domain="ne.us"/>
+    <sld domain="nh.us"/>
+    <sld domain="nj.us"/>
+    <sld domain="nm.us"/>
+    <sld domain="nv.us"/>
+    <sld domain="ny.us"/>
+    <sld domain="oh.us"/>
+    <sld domain="ok.us"/>
+    <sld domain="or.us"/>
+    <sld domain="pa.us"/>
+    <sld domain="ri.us"/>
+    <sld domain="sc.us"/>
+    <sld domain="sd.us"/>
+    <sld domain="tn.us"/>
+    <sld domain="tx.us"/>
+    <sld domain="ut.us"/>
+    <sld domain="vt.us"/>
+    <sld domain="va.us"/>
+    <sld domain="wa.us"/>
+    <sld domain="wi.us"/>
+    <sld domain="wv.us"/>
+    <sld domain="wy.us"/>
+    <!--  the following rules would be only valid under the geo-name, but we can't express that-->
+    <!--  *.*.us          cities, counties, parishes, and townships (locality.state.us)-->
+    <!--  !ci.*.*.us       city government agencies (subdomain under locality)-->
+    <!--  !town.*.*.us     town government agencies (subdomain under locality)-->
+    <!--  !co.*.*.us       county government agencies (subdomain under locality)-->
+    <!--  k12.*.us      public school districts-->
+    <!--  pvt.k12.*.us  private schools-->
+    <!--  cc.*.us       community colleges-->
+    <!--  tec.*.us      technical and vocational schools-->
+    <!--  lib.*.us      state, regional, city, and county libraries-->
+    <!--  state.*.us    state government agencies-->
+    <!--  gen.*.us      general independent entities (groups not fitting into the above categories)-->
+
+    <!--  uy : http://www.antel.com.uy/-->
+
+    <!--  uz : http://www.reg.uz/registerr.html-->
+    <!--  are there other 2nd level tlds ?-->
+    <sld domain="com.uz"/>
+    <sld domain="co.uz"/>
+
+    <!--  va : http://en.wikipedia.org/wiki/.va-->
+
+    <!--  vc : http://en.wikipedia.org/wiki/.vc-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  ve : http://registro.nic.ve/nicve/registro/index.html-->
+
+    <!--  vg : http://en.wikipedia.org/wiki/.vg-->
+
+    <!--  vi : http://www.nic.vi/Domain_Rules/body_domain_rules.html-->
+    <sld domain="com.vi"/>
+    <sld domain="org.vi"/>
+    <sld domain="edu.vi"/>
+    <sld domain="gov.vi"/>
+
+    <!--  vn : https://www.dot.vn/vnnic/vnnic/domainregistration.jsp-->
+    <sld domain="com.vn"/>
+    <sld domain="net.vn"/>
+    <sld domain="org.vn"/>
+    <sld domain="edu.vn"/>
+    <sld domain="gov.vn"/>
+    <sld domain="int.vn"/>
+    <sld domain="ac.vn"/>
+    <sld domain="biz.vn"/>
+    <sld domain="info.vn"/>
+    <sld domain="name.vn"/>
+    <sld domain="pro.vn"/>
+    <sld domain="health.vn"/>
+
+    <!--  vu : http://en.wikipedia.org/wiki/.vu-->
+    <!--  list of 2nd level tlds ?-->
+
+    <!--  ws : http://en.wikipedia.org/wiki/.ws-->
+
+    <!--  ye : http://www.y.net.ye/services/domain_name.htm-->
+
+    <!--  yu : http://www.nic.yu/pravilnik-e.html-->
+
+    <!--  za : http://www.zadna.org.za/slds.html
+               http://en.wikipedia.org/wiki/.za -->
+    <sld domain="ac.za"/>
+    <sld domain="city.za"/>
+    <sld domain="co.za"/>
+    <sld domain="edu.za"/>
+    <sld domain="gov.za"/>
+    <sld domain="law.za"/>
+    <sld domain="mil.za"/>
+    <sld domain="nom.za"/>
+    <sld domain="org.za"/>
+    <sld domain="school.za"/>
+    <sld domain="ecape.school.za"/>
+    <sld domain="fs.school.za"/>
+    <sld domain="gp.school.za"/>
+    <sld domain="kzn.school.za"/>
+    <sld domain="mpm.school.za"/>
+    <sld domain="ncape.school.za"/>
+    <sld domain="lp.school.za"/>
+    <sld domain="nw.school.za"/>
+    <sld domain="wcape.school.za"/>
+
+    <!--  zm : http://en.wikipedia.org/wiki/.zm-->
+
+    <!--  zw : http://en.wikipedia.org/wiki/.zw-->
+
+</domains>
