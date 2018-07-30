@@ -23,12 +23,14 @@ public class SamlMetadataGeneratorFilter extends MetadataGeneratorFilter {
             synchronized (SamlMetadataGeneratorFilter.class) {
 
                 TenantInfo tenantInfo = ((MetadataManager) super.manager).getTenantIdentifier().getTenantMetadata(request);
-                super.generator.setEntityId(tenantInfo.getMetadata().getLocalEntityId());
-                super.generator.setEntityBaseURL(tenantInfo.getEntityBaseUrl());
+                if (tenantInfo != null) {
+                    super.generator.setEntityId(tenantInfo.getMetadata().getLocalEntityId());
+                    super.generator.setEntityBaseURL(tenantInfo.getEntityBaseUrl());
 
-                super.manager.setHostedSPName(null);
-                super.generator.setId(null);
-                super.processMetadataInitialization(request);
+                    super.manager.setHostedSPName(null);
+                    super.generator.setId(null);
+                    super.processMetadataInitialization(request);
+                }
             }
         }
     }

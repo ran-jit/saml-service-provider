@@ -1,5 +1,7 @@
 package service.provider.filter;
 
+import com.google.common.io.ByteStreams;
+import org.apache.catalina.util.URLEncoder;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -7,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.saml.SAMLEntryPoint;
 import org.springframework.stereotype.Component;
 import service.provider.constants.SamlConstants.UrlConstants;
@@ -14,7 +17,6 @@ import service.provider.constants.SamlConstants.ValueConstants;
 import service.provider.exception.TenantNotExistsException;
 import service.provider.manager.MetadataManager;
 import service.provider.model.TenantInfo;
-import service.provider.util.URLUtil;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -25,7 +27,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.MalformedURLException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * author: Ranjith Manickam @ 30 July' 2018
@@ -36,11 +38,10 @@ public class SecurityFilter implements Filter {
 
     private final String homePageUrl;
     private final String errorPageUrl;
-    private final String instanceHost;
     private final String loginProcessingUrl;
     private final String logoutProcessingUrl;
 
-    private final URLUtil urlUtil;
+    private final URLEncoder urlEncoder;
     private final MetadataManager metadataManager;
 
     private static final Log LOGGER = LogFactory.getLog(SecurityFilter.class);
@@ -48,23 +49,16 @@ public class SecurityFilter implements Filter {
     @Autowired
     public SecurityFilter(@Value(value = ValueConstants.HOME_PAGE_URL) String homePageUrl,
                           @Value(value = ValueConstants.ERROR_PAGE_URL) String errorPageUrl,
-                          @Value(value = ValueConstants.ENTITY_BASE_URL) String entityBaseUrl,
                           @Value(value = ValueConstants.LOGIN_PROCESSING_URL) String loginProcessingUrl,
                           @Value(value = ValueConstants.LOGOUT_PROCESSING_URL) String logoutProcessingUrl,
-                          URLUtil urlUtil,
+                          URLEncoder urlEncoder,
                           MetadataManager metadataManager) {
         this.homePageUrl = homePageUrl;
         this.errorPageUrl = errorPageUrl;
         this.loginProcessingUrl = loginProcessingUrl;
         this.logoutProcessingUrl = logoutProcessingUrl;
-        this.urlUtil = urlUtil;
+        this.urlEncoder = urlEncoder;
         this.metadataManager = metadataManager;
-
-        try {
-            this.instanceHost = this.urlUtil.getDomainName(entityBaseUrl);
-        } catch (MalformedURLException ex) {
-            throw new RuntimeException(String.format("Error in entity base url, url: %s", entityBaseUrl), ex);
-        }
     }
 
     @Override
@@ -73,33 +67,37 @@ public class SecurityFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
-        if (this.instanceHost.equals(this.urlUtil.getDomainName(((HttpServletRequest) request).getRequestURL().toString()))) {
-            String idpEntityId = request.getParameter(SAMLEntryPoint.IDP_PARAMETER);
-            if (StringUtils.isEmpty(idpEntityId)) {
-                // internal redirection
-                TenantInfo tenantInfo;
-                try {
-                    tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant((HttpServletRequest) request);
-                } catch (TenantNotExistsException ex) {
-                    sendRedirect(response, this.errorPageUrl, ex.getMessage());
-                    return;
-                }
+        String requestUri = ((HttpServletRequest) request).getRequestURI();
+        if (UrlConstants.ERROR_PAGE.equals(requestUri)) {
+            displayErrorPage(response);
+            return;
+        }
+        String idpEntityId = request.getParameter(SAMLEntryPoint.IDP_PARAMETER);
+        if (StringUtils.isEmpty(idpEntityId)) {
 
-                String requestUri = ((HttpServletRequest) request).getRequestURI();
-                if (this.loginProcessingUrl.equals(requestUri)) {
-                    internalRedirect(response, requestUri, tenantInfo.getLoginProcessingUrl());
-                    return;
-                } else if (this.logoutProcessingUrl.equals(requestUri)) {
-                    internalRedirect(response, requestUri, tenantInfo.getLogoutProcessingUrl());
-                    return;
-                }
-            } else if (!idpExists(idpEntityId)) {
-                // idp doesn't exists
-                LOGGER.error(String.format("Invalid IdP entityId, %s", idpEntityId));
-                sendRedirect(response, this.errorPageUrl);
+            // internal redirection
+            TenantInfo tenantInfo;
+            try {
+                tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant((HttpServletRequest) request);
+            } catch (TenantNotExistsException ex) {
+                sendRedirect(response, this.errorPageUrl, ex.getMessage());
                 return;
             }
+
+            if (this.loginProcessingUrl.equals(requestUri)) {
+                internalRedirect(response, requestUri, tenantInfo.getLoginProcessingUrl());
+                return;
+            } else if (this.logoutProcessingUrl.equals(requestUri)) {
+                internalRedirect(response, requestUri, tenantInfo.getLogoutProcessingUrl());
+                return;
+            }
+        } else if (!idpExists(idpEntityId)) {
+            // idp doesn't exists
+            LOGGER.error(String.format("Invalid IdP entityId, %s", idpEntityId));
+            sendRedirect(response, this.errorPageUrl);
+            return;
         }
+
         filterChain.doFilter(request, response);
     }
 
@@ -129,7 +127,15 @@ public class SecurityFilter implements Filter {
     }
 
     private void sendRedirect(ServletResponse response, String url, String errorMessage) throws IOException {
-        ((HttpServletResponse) response).sendRedirect(String.format("%s?%s=%s", url, UrlConstants.MESSAGE_PARAM, errorMessage));
+        ((HttpServletResponse) response).sendRedirect(String.format("%s?%s=%s", url, UrlConstants.MESSAGE_PARAM, this.urlEncoder.encode(errorMessage, StandardCharsets.UTF_8)));
+    }
+
+    private void displayErrorPage(ServletResponse response) throws IOException {
+        response.setContentType("text/html");
+        ((HttpServletResponse) response).setStatus(HttpServletResponse.SC_OK);
+        response.getWriter().println(new String(ByteStreams.toByteArray(new ClassPathResource(UrlConstants.ERROR_PAGE_FILE).getInputStream())));
+        response.getWriter().flush();
+        response.getWriter().close();
     }
 
 }

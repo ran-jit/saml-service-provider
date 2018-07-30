@@ -63,10 +63,8 @@ public interface SamlConstants {
     interface UrlConstants {
         String REDIRECT_TO_URL_PARAM = "redirect_to_url";
 
-        String ERROR_PAGE = "/pages/error.htm";
-        String NOT_FOUND_PAGE = "/pages/404.htm";
-        String INTERNAL_SERVER_PAGE = "/pages/500.htm";
-
+        String ERROR_PAGE = "/error.html";
+        String ERROR_PAGE_FILE = "/public/error.html";
         String MESSAGE_PARAM = "message";
     }
 

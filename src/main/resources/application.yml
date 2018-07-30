@@ -55,8 +55,8 @@ sp:
     # organization home page url.
     homePage: https://www.ranmanic.in
 
-    # organization error page url.
-    errorPage: https://www.ranmanic.in/error.htm
+    # organization error page url. default: /error.html
+    errorPage: /error.html
 
     # service provider login uri (entry point).
     login: /sso/signin
@@ -89,4 +89,10 @@ saml.idp:
       # metadata truest check (If certificate is expired make it to 'false'. But recommended 'true').
       trust-check: true
       # metadata file resource type (values: FILE, URL).
+      type: FILE
+
+  - tenantId: manickam
+    metadata:
+      filePath: /Users/ranmanic/Documents/workspace/saml-service-provider/src/main/resources/metadata/ssocircle-idp.xml
+      trust-check: true
       type: FILE

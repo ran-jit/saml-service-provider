@@ -2,6 +2,7 @@ package service.provider.config;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import org.apache.catalina.util.URLEncoder;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpConnectionManager;
@@ -495,9 +496,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(this.metadataProcessingUrl).permitAll()
                 .antMatchers(this.loginFilterProcessingUrl).permitAll()
                 .antMatchers(this.logoutFilterProcessingUrl).permitAll()
-                .antMatchers(UrlConstants.ERROR_PAGE).permitAll()
-                .antMatchers(UrlConstants.NOT_FOUND_PAGE).permitAll()
-                .antMatchers(UrlConstants.INTERNAL_SERVER_PAGE).permitAll()
                 .antMatchers("/error").permitAll()
                 .anyRequest().authenticated();
         httpSecurity
@@ -532,6 +530,12 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
     @Scope(value = BeanDefinition.SCOPE_SINGLETON)
     public URLUtil urlUtil() {
         return new URLUtil(this.domainsFilterFile);
+    }
+
+    @Bean
+    @Scope(value = BeanDefinition.SCOPE_SINGLETON)
+    public URLEncoder urlEncoder() {
+        return new URLEncoder();
     }
 
 }

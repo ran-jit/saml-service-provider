@@ -15,8 +15,8 @@ import org.springframework.security.saml.SAMLLogoutFilter;
 import org.springframework.security.saml.context.SAMLMessageContext;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
-import service.provider.constants.SamlConstants;
 import service.provider.constants.SamlConstants.BeanConstants;
+import service.provider.constants.SamlConstants.UrlConstants;
 import service.provider.exception.TenantNotExistsException;
 import service.provider.manager.MetadataManager;
 import service.provider.model.TenantInfo;
@@ -85,7 +85,7 @@ public class SamlLogoutFilter extends SAMLLogoutFilter {
                 LOGGER.debug("Error encoding outgoing message", ex);
                 throw new ServletException("Error encoding outgoing message", ex);
             } catch (TenantNotExistsException ex) {
-                response.sendRedirect(String.format("%s?%s=%s", this.errorPageUrl, SamlConstants.UrlConstants.MESSAGE_PARAM, ex.getMessage()));
+                response.sendRedirect(String.format("%s?%s=%s", this.errorPageUrl, UrlConstants.MESSAGE_PARAM, ex.getMessage()));
             }
         } else {
             chain.doFilter(request, response);
