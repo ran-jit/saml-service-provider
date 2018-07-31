@@ -50,4 +50,9 @@ public class AttributeTenantIdentifier extends TenantIdentifier {
         tenantInfo.setMetadataProcessingUrl(String.format("%s?%s=%s", super.metadataProcessingUrl, this.param, tenantInfo.getTenantId()));
     }
 
+    @Override
+    protected String getErrorIdentifier(HttpServletRequest request) {
+        return String.format("%s?%s=%s", super.entityBaseUrl, this.param, request.getParameter(this.param));
+    }
+
 }

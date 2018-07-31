@@ -59,4 +59,9 @@ public class DnsTenantIdentifier extends TenantIdentifier {
         }
     }
 
+    @Override
+    protected String getErrorIdentifier(HttpServletRequest request) {
+        return request.getServerName();
+    }
+
 }

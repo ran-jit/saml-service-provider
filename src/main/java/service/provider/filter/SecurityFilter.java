@@ -91,7 +91,7 @@ public class SecurityFilter implements Filter {
 
             filterChain.doFilter(request, response);
         } catch (TenantNotExistsException ex) {
-            sendRedirect(response, String.format("%s?%s=%s", this.errorPageUrl, UrlConstants.MESSAGE_PARAM, ex.getMessage()));
+            sendRedirect(response, String.format("%s?%s", this.errorPageUrl, ex.getMessage()));
         }
     }
 

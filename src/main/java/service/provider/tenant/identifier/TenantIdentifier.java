@@ -53,7 +53,7 @@ public abstract class TenantIdentifier {
     protected TenantInfo identifyTenant(HttpServletRequest request, String tenantId, TenantCode errorCode) throws TenantNotExistsException {
         TenantInfo tenantInfo = this.metadataManager.getTenantInfo(tenantId);
         if (tenantInfo == null) {
-            throw new TenantNotExistsException(request, errorCode);
+            throw new TenantNotExistsException(getErrorIdentifier(request), errorCode);
         }
         return tenantInfo;
     }
@@ -63,6 +63,8 @@ public abstract class TenantIdentifier {
     protected abstract String getTenantId(HttpServletRequest request);
 
     public abstract void updateMetadata(TenantInfo tenantInfo, String remoteEntityId);
+
+    protected abstract String getErrorIdentifier(HttpServletRequest request);
 
     public TenantInfo getTenantMetadata(HttpServletRequest request) {
         String tenantId = getTenantId(request);

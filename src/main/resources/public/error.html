@@ -38,6 +38,7 @@
 
         #container {
             margin: 10px;
+            margin-top: 5%;
             border: 1px solid #D0D0D0;
             -webkit-box-shadow: 0 0 8px #D0D0D0;
         }
@@ -51,11 +52,10 @@
         }
     </style>
 </head>
-<body onload="getUrlParameter('message')">
-<div id="container" style="margin-top:5%;">
+<body onload="message()">
+<div id="container">
     <h1>Error</h1>
-    <p>For some reason we're not able to process your request on our server. Please contact system administrator for
-        more details.
+    <p>For some reason we're not able to process your request. Please contact system administrator for more details.
         <br/><br/>
         <span id="message"></span>
     </p>
@@ -72,11 +72,27 @@
             sParameterName = sURLVariables[i].split('=');
 
             if (sParameterName[0] === sParam) {
-                document.getElementById("message").innerText = sParameterName[1] === undefined ? true : sParameterName[1];
-                return;
+                //document.getElementById("message").innerText = (sParameterName[1] === undefined) ? true : JSON.parse(sParameterName[1]);
+                return sParameterName[1];
             }
         }
-    };
+    }
+
+    function message() {
+        var isJson = getUrlParameter('json');
+        var messageText = getUrlParameter('message');
+        if (messageText === undefined) {
+            return;
+        }
+
+        if (isJson != undefined && (isJson === true || isJson === "true")) {
+            json = JSON.parse(messageText.replace(/'/g, "\""));
+            document.getElementById("message").innerText = JSON.stringify(json, undefined, 4);
+        } else {
+            document.getElementById("message").innerText = messageText;
+        }
+    }
+
 </script>
 </body>
 </html>
