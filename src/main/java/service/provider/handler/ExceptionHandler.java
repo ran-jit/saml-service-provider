@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import service.provider.exception.UserAuthenticationException;
@@ -19,7 +18,6 @@ import java.time.LocalDateTime;
 /**
  * author: Ranjith Manickam @ 30 July' 2018
  */
-@Controller
 @ControllerAdvice
 public class ExceptionHandler {
 
@@ -60,6 +58,7 @@ public class ExceptionHandler {
                 .httpStatus(status)
                 .message(message)
                 .status(Boolean.FALSE)
+                .timestamp(LocalDateTime.now())
                 .build();
     }
 

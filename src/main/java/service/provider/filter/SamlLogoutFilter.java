@@ -16,8 +16,6 @@ import org.springframework.security.saml.context.SAMLMessageContext;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import service.provider.constants.SamlConstants.BeanConstants;
-import service.provider.constants.SamlConstants.UrlConstants;
-import service.provider.exception.TenantNotExistsException;
 import service.provider.manager.MetadataManager;
 import service.provider.model.TenantInfo;
 
@@ -34,7 +32,6 @@ import java.io.IOException;
 public class SamlLogoutFilter extends SAMLLogoutFilter {
 
     private final String homePageUrl;
-    private final String errorPageUrl;
 
     @Autowired
     @Qualifier(value = BeanConstants.METADATA)
@@ -42,10 +39,9 @@ public class SamlLogoutFilter extends SAMLLogoutFilter {
 
     private static final Log LOGGER = LogFactory.getLog(SamlLogoutFilter.class);
 
-    public SamlLogoutFilter(String homePageUrl, String errorPageUrl, LogoutSuccessHandler successHandler, LogoutHandler localHandler, LogoutHandler globalHandlers) {
+    public SamlLogoutFilter(String homePageUrl, LogoutSuccessHandler successHandler, LogoutHandler localHandler, LogoutHandler globalHandlers) {
         super(successHandler, new LogoutHandler[]{localHandler}, new LogoutHandler[]{globalHandlers});
         this.homePageUrl = homePageUrl;
-        this.errorPageUrl = errorPageUrl;
     }
 
     @Override
@@ -84,8 +80,6 @@ public class SamlLogoutFilter extends SAMLLogoutFilter {
             } catch (MessageEncodingException ex) {
                 LOGGER.debug("Error encoding outgoing message", ex);
                 throw new ServletException("Error encoding outgoing message", ex);
-            } catch (TenantNotExistsException ex) {
-                response.sendRedirect(String.format("%s?%s=%s", this.errorPageUrl, UrlConstants.MESSAGE_PARAM, ex.getMessage()));
             }
         } else {
             chain.doFilter(request, response);

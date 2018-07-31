@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
 import service.provider.constants.SamlConstants.BeanConstants;
-import service.provider.exception.TenantNotExistsException;
 import service.provider.manager.MetadataManager;
 import service.provider.model.TenantInfo;
 
@@ -27,16 +26,12 @@ public class LogoutSuccessHandler extends SimpleUrlLogoutSuccessHandler {
 
     @Override
     protected String determineTargetUrl(HttpServletRequest request, HttpServletResponse response) {
-        try {
-            TenantInfo tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant(request);
-            if (tenantInfo == null || tenantInfo.getLogoutProcessingUrl() == null) {
-                LOGGER.info("metadata is null, so redirecting to default target url");
-                return getDefaultTargetUrl();
-            }
-            return tenantInfo.getLogoutProcessingUrl();
-        } catch (TenantNotExistsException ex) {
+        TenantInfo tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant(request);
+        if (tenantInfo == null || tenantInfo.getLogoutProcessingUrl() == null) {
+            LOGGER.info("metadata is null, so redirecting to default target url");
             return getDefaultTargetUrl();
         }
+        return tenantInfo.getLogoutProcessingUrl();
     }
 
     @PreDestroy

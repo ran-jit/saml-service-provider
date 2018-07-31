@@ -2,7 +2,6 @@ package service.provider.config;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import org.apache.catalina.util.URLEncoder;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpConnectionManager;
@@ -130,7 +129,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
 
     private final String authSuccessRedirectionUrl;
     private final String homePageUrl;
-    private final String errorPageUrl;
     private final Integer responseSkew;
 
     private final String tenantIdentifier;
@@ -155,7 +153,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
                       @Value(value = ValueConstants.METADATA_PROCESSING_URL) String metadataProcessingUrl,
                       @Value(value = ValueConstants.AUTH_SUCCESS_REDIRECTION_URL) String authSuccessRedirectionUrl,
                       @Value(value = ValueConstants.HOME_PAGE_URL) String homePageUrl,
-                      @Value(value = ValueConstants.ERROR_PAGE_URL) String errorPageUrl,
                       @Value(value = ValueConstants.RESPONSE_SKEW) Integer responseSkew,
                       @Value(value = ValueConstants.TENANT_IDENTIFIER) String tenantIdentifier,
                       @Value(value = ValueConstants.TENANT_IDENTIFIER_PARAM) String tenantIdentifierParam,
@@ -175,7 +172,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
         this.metadataProcessingUrl = metadataProcessingUrl;
         this.authSuccessRedirectionUrl = authSuccessRedirectionUrl;
         this.homePageUrl = homePageUrl;
-        this.errorPageUrl = errorPageUrl;
         this.responseSkew = responseSkew;
         this.tenantIdentifier = tenantIdentifier.replaceAll("\\s+", "").toUpperCase();
         this.tenantIdentifierParam = tenantIdentifierParam;
@@ -205,7 +201,7 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public SAMLLogoutFilter samlLogoutFilter() {
-        SamlLogoutFilter filter = new SamlLogoutFilter(this.homePageUrl, this.errorPageUrl, logoutSuccessHandler(), contextLogoutHandler(), contextLogoutHandler());
+        SamlLogoutFilter filter = new SamlLogoutFilter(this.homePageUrl, logoutSuccessHandler(), contextLogoutHandler(), contextLogoutHandler());
         filter.setFilterProcessesUrl(this.logoutProcessingUrl);
         return filter;
     }
@@ -219,7 +215,7 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public MetadataDisplayFilter metadataDisplayFilter() {
-        MetadataDisplayFilter filter = new SamlMetadataDisplayFilter(this.errorPageUrl);
+        MetadataDisplayFilter filter = new SamlMetadataDisplayFilter();
         filter.setFilterProcessesUrl(this.metadataProcessingUrl);
         return filter;
     }
@@ -530,12 +526,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
     @Scope(value = BeanDefinition.SCOPE_SINGLETON)
     public URLUtil urlUtil() {
         return new URLUtil(this.domainsFilterFile);
-    }
-
-    @Bean
-    @Scope(value = BeanDefinition.SCOPE_SINGLETON)
-    public URLEncoder urlEncoder() {
-        return new URLEncoder();
     }
 
 }

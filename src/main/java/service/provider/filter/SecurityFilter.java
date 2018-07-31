@@ -1,7 +1,6 @@
 package service.provider.filter;
 
 import com.google.common.io.ByteStreams;
-import org.apache.catalina.util.URLEncoder;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -28,7 +27,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 /**
  * author: Ranjith Manickam @ 30 July' 2018
@@ -42,7 +40,6 @@ public class SecurityFilter implements Filter {
     private final String loginProcessingUrl;
     private final String logoutProcessingUrl;
 
-    private final URLEncoder urlEncoder;
     private final MetadataManager metadataManager;
 
     private static final Log LOGGER = LogFactory.getLog(SecurityFilter.class);
@@ -52,13 +49,11 @@ public class SecurityFilter implements Filter {
                           @Value(value = ValueConstants.ERROR_PAGE_URL) String errorPageUrl,
                           @Value(value = ValueConstants.LOGIN_PROCESSING_URL) String loginProcessingUrl,
                           @Value(value = ValueConstants.LOGOUT_PROCESSING_URL) String logoutProcessingUrl,
-                          URLEncoder urlEncoder,
                           MetadataManager metadataManager) {
         this.homePageUrl = homePageUrl;
         this.errorPageUrl = errorPageUrl;
         this.loginProcessingUrl = loginProcessingUrl;
         this.logoutProcessingUrl = logoutProcessingUrl;
-        this.urlEncoder = urlEncoder;
         this.metadataManager = metadataManager;
     }
 
@@ -68,38 +63,36 @@ public class SecurityFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
-        String requestUri = ((HttpServletRequest) request).getRequestURI();
-        if (UrlConstants.ERROR_PAGE.equals(requestUri)) {
-            displayErrorPage(response);
-            return;
-        }
-        String idpEntityId = request.getParameter(SAMLEntryPoint.IDP_PARAMETER);
-        if (StringUtils.isEmpty(idpEntityId)) {
+        try {
+            String requestUri = ((HttpServletRequest) request).getRequestURI();
+            if (UrlConstants.ERROR_PAGE.equals(requestUri)) {
+                displayErrorPage(response);
+                return;
+            }
+            String idpEntityId = request.getParameter(SAMLEntryPoint.IDP_PARAMETER);
+            if (StringUtils.isEmpty(idpEntityId)) {
 
-            // internal redirection
-            TenantInfo tenantInfo;
-            try {
-                tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant((HttpServletRequest) request);
-            } catch (TenantNotExistsException ex) {
-                sendRedirect(response, this.errorPageUrl, ex.getMessage());
+                // internal redirection
+                TenantInfo tenantInfo = this.metadataManager.getTenantIdentifier().identifyTenant((HttpServletRequest) request);
+
+                if (this.loginProcessingUrl.equals(requestUri)) {
+                    internalRedirect(response, requestUri, tenantInfo.getLoginProcessingUrl());
+                    return;
+                } else if (this.logoutProcessingUrl.equals(requestUri)) {
+                    internalRedirect(response, requestUri, tenantInfo.getLogoutProcessingUrl());
+                    return;
+                }
+            } else if (!idpExists(idpEntityId)) {
+                // idp doesn't exists
+                LOGGER.error(String.format("Invalid IdP entityId, %s", idpEntityId));
+                sendRedirect(response, this.errorPageUrl);
                 return;
             }
 
-            if (this.loginProcessingUrl.equals(requestUri)) {
-                internalRedirect(response, requestUri, tenantInfo.getLoginProcessingUrl());
-                return;
-            } else if (this.logoutProcessingUrl.equals(requestUri)) {
-                internalRedirect(response, requestUri, tenantInfo.getLogoutProcessingUrl());
-                return;
-            }
-        } else if (!idpExists(idpEntityId)) {
-            // idp doesn't exists
-            LOGGER.error(String.format("Invalid IdP entityId, %s", idpEntityId));
-            sendRedirect(response, this.errorPageUrl);
-            return;
+            filterChain.doFilter(request, response);
+        } catch (TenantNotExistsException ex) {
+            sendRedirect(response, String.format("%s?%s=%s", this.errorPageUrl, UrlConstants.MESSAGE_PARAM, ex.getMessage()));
         }
-
-        filterChain.doFilter(request, response);
     }
 
     @Override
@@ -125,10 +118,6 @@ public class SecurityFilter implements Filter {
 
     private void sendRedirect(ServletResponse response, String url) throws IOException {
         ((HttpServletResponse) response).sendRedirect(url);
-    }
-
-    private void sendRedirect(ServletResponse response, String url, String errorMessage) throws IOException {
-        ((HttpServletResponse) response).sendRedirect(String.format("%s?%s=%s", url, UrlConstants.MESSAGE_PARAM, this.urlEncoder.encode(errorMessage, StandardCharsets.UTF_8)));
     }
 
     private void displayErrorPage(ServletResponse response) throws IOException {

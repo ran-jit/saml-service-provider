@@ -36,8 +36,8 @@ public abstract class TenantIdentifier {
     @Getter
     @AllArgsConstructor
     public enum TenantCode {
-        DNS(1001), ATTRIBUTE(1002), URL(1003);
-        private Integer errorCode;
+        DNS("D_1001"), ATTRIBUTE("A_1002"), URL("U_1003");
+        private String errorCode;
     }
 
     public TenantIdentifier(String entityBaseUrl, String loginProcessingUrl, String logoutProcessingUrl,
@@ -53,7 +53,7 @@ public abstract class TenantIdentifier {
     protected TenantInfo identifyTenant(HttpServletRequest request, String tenantId, TenantCode errorCode) throws TenantNotExistsException {
         TenantInfo tenantInfo = this.metadataManager.getTenantInfo(tenantId);
         if (tenantInfo == null) {
-            throw new TenantNotExistsException(errorCode, request.getRequestURL().toString());
+            throw new TenantNotExistsException(request, errorCode);
         }
         return tenantInfo;
     }

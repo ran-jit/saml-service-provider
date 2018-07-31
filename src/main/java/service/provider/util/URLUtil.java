@@ -14,7 +14,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -84,20 +83,6 @@ public class URLUtil {
         for (int i = 0; i < children.getLength(); ++i) {
             this.addDomainSuffix(((Element) children.item(i)).getAttribute(UtilConstants.DOMAIN_ATTRIBUTE_NAME));
         }
-    }
-
-    /**
-     * Returns the domain name of the url. As an example,
-     * <code>
-     * getDomainName("http://ranjith.ranmanic.in/")
-     * </code>
-     * will return
-     * <code>
-     * ranmanic.in
-     * </code>
-     */
-    public String getDomainName(String url) throws MalformedURLException {
-        return getDomainName(new URL(url));
     }
 
     /**
