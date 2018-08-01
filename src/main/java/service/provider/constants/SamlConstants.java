@@ -67,6 +67,8 @@ public interface SamlConstants {
         String ERROR_PAGE_FILE = "/public/error.html";
         String MESSAGE_PARAM = "message";
         String JSON_PARAM = "json";
+
+        String COOKIE_JSESSIONID = "JSESSIONID";
     }
 
     interface UtilConstants {

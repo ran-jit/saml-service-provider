@@ -2,23 +2,13 @@ package service.provider.config;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpConnectionManager;
 import org.apache.commons.httpclient.HttpsURL;
 import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.velocity.app.VelocityEngine;
 import org.opensaml.saml2.core.NameIDType;
-import org.opensaml.saml2.metadata.provider.MetadataProvider;
 import org.opensaml.saml2.metadata.provider.MetadataProviderException;
-import org.opensaml.saml2.metadata.provider.ResourceBackedMetadataProvider;
-import org.opensaml.util.resource.ClasspathResource;
-import org.opensaml.util.resource.FilesystemResource;
-import org.opensaml.util.resource.HttpResource;
-import org.opensaml.util.resource.Resource;
-import org.opensaml.util.resource.ResourceException;
 import org.opensaml.xml.parse.StaticBasicParserPool;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -45,8 +35,6 @@ import org.springframework.security.saml.key.EmptyKeyManager;
 import org.springframework.security.saml.key.JKSKeyManager;
 import org.springframework.security.saml.key.KeyManager;
 import org.springframework.security.saml.log.SAMLDefaultLogger;
-import org.springframework.security.saml.metadata.ExtendedMetadata;
-import org.springframework.security.saml.metadata.ExtendedMetadataDelegate;
 import org.springframework.security.saml.metadata.MetadataDisplayFilter;
 import org.springframework.security.saml.metadata.MetadataGenerator;
 import org.springframework.security.saml.metadata.MetadataGeneratorFilter;
@@ -86,19 +74,18 @@ import service.provider.filter.SamlLogoutFilter;
 import service.provider.filter.SamlMetadataDisplayFilter;
 import service.provider.filter.SamlMetadataGeneratorFilter;
 import service.provider.manager.MetadataManager;
-import service.provider.model.TenantInfo;
 import service.provider.service.SamlUserDetailsService;
 import service.provider.tenant.identifier.TenantIdentifier;
 import service.provider.tenant.identifier.TenantIdentifier.TenantCode;
 import service.provider.tenant.identifier.impl.AttributeTenantIdentifier;
 import service.provider.tenant.identifier.impl.DnsTenantIdentifier;
+import service.provider.util.MetadataUtil;
 import service.provider.util.URLUtil;
 
 import javax.validation.Valid;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
-import java.util.Timer;
 import java.util.stream.Collectors;
 
 /**
@@ -135,8 +122,6 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
     private final String tenantIdentifierParam;
 
     private final String domainsFilterFile;
-
-    private static final Log LOGGER = LogFactory.getLog(SamlConfig.class);
 
     public SamlConfig(@Value(value = ValueConstants.IS_LOAD_BALANCER_ENV) Boolean isLoadBalancerEnv,
                       @Value(value = ValueConstants.METADATA_ENTITY_ID) String metadataEntityId,
@@ -248,55 +233,7 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
     @Bean(name = BeanConstants.METADATA)
     @Scope(value = BeanDefinition.SCOPE_SINGLETON)
     public MetadataManager metadata(@Valid MetadataConfig metadataConfig) throws MetadataProviderException {
-        List<MetadataProvider> providers = null;
-        if (CollectionUtils.isNotEmpty(metadataConfig.getIdp())) {
-            providers = metadataConfig.getIdp().stream()
-                    .map(tenantInfo -> {
-                        try {
-                            return idpMetadata(tenantInfo);
-                        } catch (Exception ex) {
-                            LOGGER.error("Error in metadata generation, metadataConfig: " + metadataConfig, ex);
-                        }
-                        return null;
-                    }).collect(Collectors.toList());
-        }
-
-        return new MetadataManager(metadataConfig, providers);
-    }
-
-    private ExtendedMetadataDelegate idpMetadata(TenantInfo tenantInfo) throws MetadataProviderException, ResourceException {
-        Resource resource;
-        switch (tenantInfo.getMetadata().getType()) {
-            case FILE:
-                resource = new FilesystemResource(tenantInfo.getMetadata().getFilePath());
-                break;
-            case URL:
-                resource = new HttpResource(tenantInfo.getMetadata().getFilePath());
-                break;
-            default:
-                resource = new ClasspathResource(tenantInfo.getMetadata().getFilePath());
-                break;
-        }
-
-        ResourceBackedMetadataProvider metadataProvider = new ResourceBackedMetadataProvider(new Timer(true), resource);
-        metadataProvider.setParserPool(parserPool());
-
-        ExtendedMetadata defaultMetadata = new ExtendedMetadata();
-        defaultMetadata.setAlias(tenantInfo.getTenantId());
-
-        ExtendedMetadata extendedMetadata = new ExtendedMetadata();
-        extendedMetadata.setAlias(tenantInfo.getTenantId());
-        extendedMetadata.setLocal(true);
-        extendedMetadata.setSignMetadata(false);
-        extendedMetadata.setIdpDiscoveryEnabled(false);
-
-        Map<String, ExtendedMetadata> metadataMap = Maps.newHashMap();
-        metadataMap.put(tenantInfo.getTenantId(), extendedMetadata);
-
-        ExtendedMetadataDelegate metadataDelegate = new ExtendedMetadataDelegate(metadataProvider, defaultMetadata, metadataMap);
-        metadataDelegate.setMetadataTrustCheck(tenantInfo.getMetadata().getTrustCheck());
-        metadataDelegate.setMetadataRequireSignature(false);
-        return metadataDelegate;
+        return new MetadataManager(metadataConfig, metadataUtil().getProviders(metadataConfig));
     }
 
     @Bean
@@ -496,6 +433,8 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated();
         httpSecurity
                 .logout()
+                .deleteCookies(UrlConstants.COOKIE_JSESSIONID)
+                .invalidateHttpSession(true)
                 .logoutSuccessUrl("/");
     }
 
@@ -526,6 +465,12 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
     @Scope(value = BeanDefinition.SCOPE_SINGLETON)
     public URLUtil urlUtil() {
         return new URLUtil(this.domainsFilterFile);
+    }
+
+    @Bean
+    @Scope(value = BeanDefinition.SCOPE_SINGLETON)
+    public MetadataUtil metadataUtil() {
+        return new MetadataUtil(parserPool());
     }
 
 }

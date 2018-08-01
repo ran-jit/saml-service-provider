@@ -13,7 +13,9 @@ import org.springframework.security.saml.metadata.ExtendedMetadataProvider;
 import service.provider.config.MetadataConfig;
 import service.provider.model.TenantInfo;
 import service.provider.tenant.identifier.TenantIdentifier;
+import service.provider.util.MetadataUtil;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.List;
 import java.util.Map;
@@ -28,6 +30,9 @@ public class MetadataManager extends CachingMetadataManager {
     @Autowired
     protected TenantIdentifier tenantIdentifier;
 
+    @Autowired
+    protected MetadataUtil metadataUtil;
+
     private final MetadataConfig metadataConfig;
     private final Map<String, TenantInfo> metadataCache;
 
@@ -41,9 +46,11 @@ public class MetadataManager extends CachingMetadataManager {
         this.metadataCache = Maps.newHashMap();
     }
 
+    @PostConstruct
     public void init() {
         this.metadataConfig.getIdp().forEach(tenantInfo -> {
             try {
+                super.refreshMetadata();
                 this.lock.readLock().lock();
                 String entityId = getIDPEntityNames().stream()
                         .filter(idpEntityName -> (validate(idpEntityName, tenantInfo.getTenantId()) != null))
