@@ -29,7 +29,7 @@ server:
 # ATTRIBUTE -> request url: https://sp.ranmanic.in?tenant=google. Based on the request url parameter tenant is been identified.
 tenant:
   # tenant identifier (supported values: DNS, ATTRIBUTE, URL).
-  identifier: DNS
+  identifier: ATTRIBUTE
 
   # attribute tenant identifier parameter.
   identifierParam: tenant
@@ -39,7 +39,7 @@ tenant:
 # service provider configuration.
 sp:
   # service provider entity id (this will be changed based on the selected tenant identifier)
-  entityId: https://ranjith.ranmanic.in
+  entityId: https://sp.ranmanic.in
 
   # name id formats (supported values: EMAIL,TRANSIENT,PERSISTENT,UNSPECIFIED). default: EMAIL.
   nameId: EMAIL,TRANSIENT
@@ -49,7 +49,7 @@ sp:
 
   url:
     # service provider application base url.
-    base: https://*.ranmanic.in:9000
+    base: https://sp.ranmanic.in:9000
 
     # organization home page url.
     homePage: https://www.ranmanic.in

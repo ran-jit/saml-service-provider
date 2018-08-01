@@ -8,7 +8,7 @@ server:
 
   # ssl certificate configuration.
   ssl:
-    # ssl enabled. (recommended 'true').
+    # ssl enabled. (recommended value is 'true').
     enabled: true
     # ssl key store file location (.jks extension file).
     key-store: <file-path>
@@ -38,8 +38,7 @@ tenant:
 
 # service provider configuration.
 sp:
-  # service provider entity id (If you're enabled, DNS tenant identifier entity id and base url ll change based on the request url.
-  # ex: request url: https://sp.ranmanic.in -> entityId: sp.ranmanic.in & baseUrl: https://sp.ranmanic.in.
+  # service provider entity id (this will be changed based on the selected tenant identifier)
   entityId: https://ranjith.ranmanic.in
 
   # name id formats (supported values: EMAIL,TRANSIENT,PERSISTENT,UNSPECIFIED). default: EMAIL.
@@ -86,7 +85,7 @@ saml.idp:
     metadata:
       # metadata file location (ex: /Users/ranmanic/ping-idp.xml [or] https://sp.ranmanic.in/sso/exchange/data).
       filePath: /Users/ranmanic/Documents/workspace/saml-service-provider/src/main/resources/metadata/ping-idp.xml
-      # metadata truest check (If certificate is expired make it to 'false'. But recommended 'true').
+      # metadata truest check (If certificate is expired make it to 'false'. But recommended value is 'true').
       trust-check: true
       # metadata file resource type (values: FILE, URL).
       type: FILE
