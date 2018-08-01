@@ -63,12 +63,11 @@ public interface SamlConstants {
     interface UrlConstants {
         String REDIRECT_TO_URL_PARAM = "redirect_to_url";
 
-        String ERROR_PAGE = "/error.html";
-        String ERROR_PAGE_FILE = "/public/error.html";
         String MESSAGE_PARAM = "message";
         String JSON_PARAM = "json";
-
         String COOKIE_JSESSIONID = "JSESSIONID";
+
+        Set<String> IGNORE_URIS = Sets.newHashSet("/error.html", "/favicon.ico");
     }
 
     interface UtilConstants {

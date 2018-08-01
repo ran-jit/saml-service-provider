@@ -1,5 +1,6 @@
 package service.provider.config;
 
+import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.apache.commons.httpclient.HttpClient;
@@ -19,6 +20,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -436,6 +438,13 @@ public class SamlConfig extends WebSecurityConfigurerAdapter {
                 .deleteCookies(UrlConstants.COOKIE_JSESSIONID)
                 .invalidateHttpSession(true)
                 .logoutSuccessUrl("/");
+    }
+
+    @Override
+    public void configure(WebSecurity webSecurity) {
+        webSecurity
+                .ignoring()
+                .antMatchers(Iterables.toArray(UrlConstants.IGNORE_URIS, String.class));
     }
 
     @Bean
