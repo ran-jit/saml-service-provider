@@ -1,0 +1,98 @@
+#-- tomcat server configuration
+server:
+  # application port number.
+  port: 9000
+
+  # if the service running in proxy env make it to 'true'.
+  loadBalancerEnv: false
+
+  # ssl certificate configuration.
+  ssl:
+    # ssl enabled. (recommended 'true').
+    enabled: true
+    # ssl key store file location (.jks extension file).
+    key-store: <file-path>
+    # ssl key store alias.
+    key-alias: <alias>
+    # ssl key store password.
+    key-store-password: <password>
+
+  # tomcat configuration.
+  tomcat:
+    max-threads: 1024
+    uri-encoding: UTF-8
+
+
+
+# tenant/client identifier (supported values: DNS, ATTRIBUTE).
+# DNS       -> request url: https://google.ranmanic.in -> tenant/client is 'google'. Based on the sub domain tenant is been identified.
+# ATTRIBUTE -> request url: https://sp.ranmanic.in?tenant=google. Based on the request url parameter tenant is been identified.
+tenant:
+  # tenant identifier (supported values: DNS, ATTRIBUTE, URL).
+  identifier: DNS
+
+  # attribute tenant identifier parameter.
+  identifierParam: tenant
+
+
+
+# service provider configuration.
+sp:
+  # service provider entity id (If you're enabled, DNS tenant identifier entity id and base url ll change based on the request url.
+  # ex: request url: https://sp.ranmanic.in -> entityId: sp.ranmanic.in & baseUrl: https://sp.ranmanic.in.
+  entityId: https://ranjith.ranmanic.in
+
+  # name id formats (supported values: EMAIL,TRANSIENT,PERSISTENT,UNSPECIFIED). default: EMAIL.
+  nameId: EMAIL,TRANSIENT
+
+  # time difference between SP and IDP response. default: 90 (In seconds).
+  responseSkew: 90
+
+  url:
+    # service provider application base url.
+    base: https://*.ranmanic.in:9000
+
+    # organization home page url.
+    homePage: https://www.ranmanic.in
+
+    # organization error page url. default: /error.html
+    errorPage: /error.html
+
+    # service provider login uri (entry point).
+    login: /sso/signin
+
+    # service provider logout uri (exit point).
+    logout: /sso/signout
+
+    # service provider metadata uri.
+    metadata: /sso/exchange/data
+
+    # service provider Assertion Consumer Service (ACS) uri.
+    loginFilter: /sso/web/signin
+
+    # service provider Single Logout Endpoint.
+    logoutFilter: /sso/web/singout
+
+    # authentication success redirection uri.
+    authSuccessRedirection: /auth/token
+
+
+
+# identity provider configuration.
+saml.idp:
+    # tenant 'unique id'. Based on the value tenant is been identified.
+  - tenantId: ranjith
+    # metadata details.
+    metadata:
+      # metadata file location (ex: /Users/ranmanic/ping-idp.xml [or] https://sp.ranmanic.in/sso/exchange/data).
+      filePath: /Users/ranmanic/Documents/workspace/saml-service-provider/src/main/resources/metadata/ping-idp.xml
+      # metadata truest check (If certificate is expired make it to 'false'. But recommended 'true').
+      trust-check: true
+      # metadata file resource type (values: FILE, URL).
+      type: FILE
+
+  - tenantId: manickam
+    metadata:
+      filePath: /Users/ranmanic/Documents/workspace/saml-service-provider/src/main/resources/metadata/ssocircle-idp.xml
+      trust-check: true
+      type: FILE
