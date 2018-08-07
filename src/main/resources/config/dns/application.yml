@@ -28,7 +28,7 @@ server:
 # DNS       -> request url: https://google.ranmanic.in -> tenant/client is 'google'. Based on the sub domain tenant is been identified.
 # ATTRIBUTE -> request url: https://sp.ranmanic.in?tenant=google. Based on the request url parameter tenant is been identified.
 tenant:
-  # tenant identifier (supported values: DNS, ATTRIBUTE, URL).
+  # tenant identifier (supported values: DNS, ATTRIBUTE).
   identifier: DNS
 
   # attribute tenant identifier parameter.
@@ -70,7 +70,7 @@ sp:
     loginFilter: /sso/web/signin
 
     # service provider Single Logout Endpoint.
-    logoutFilter: /sso/web/singout
+    logoutFilter: /sso/web/signout
 
     # authentication success redirection uri.
     authSuccessRedirection: /auth/token
