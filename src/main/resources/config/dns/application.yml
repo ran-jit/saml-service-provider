@@ -25,8 +25,8 @@ server:
 
 
 # tenant/client identifier (supported values: DNS, ATTRIBUTE).
-# DNS       -> request url: https://google.ranmanic.in -> tenant/client is 'google'. Based on the sub domain tenant is been identified.
-# ATTRIBUTE -> request url: https://sp.ranmanic.in?tenant=google. Based on the request url parameter tenant is been identified.
+# DNS       -> request url: https://google.ranmanic.in. Based on the sub domain name tenant is been identified, client/tenant is "google".
+# ATTRIBUTE -> request url: https://sp.ranmanic.in?tenant=google. Based on the url parameter (tenant.identifierParam value) tenant is been identified, client/tenant is "google".
 tenant:
   # tenant identifier (supported values: DNS, ATTRIBUTE).
   identifier: DNS
